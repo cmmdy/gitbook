@@ -1,0 +1,620 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>业务组件 · Android</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="周文韬">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="基础组件.html" />
+    
+    
+    <link rel="prev" href="技术栈.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="android架构.html">
+            
+                <a href="android架构.html">
+            
+                    
+                    android架构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="背景.html">
+            
+                <a href="背景.html">
+            
+                    
+                    背景
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="架构.html">
+            
+                <a href="架构.html">
+            
+                    
+                    架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="技术栈.html">
+            
+                <a href="技术栈.html">
+            
+                    
+                    技术栈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.4" data-path="业务组件.html">
+            
+                <a href="业务组件.html">
+            
+                    
+                    业务组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="基础组件.html">
+            
+                <a href="基础组件.html">
+            
+                    
+                    基础组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >业务组件</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x4E1A;&#x52A1;&#x7EC4;&#x4EF6;">&#x4E1A;&#x52A1;&#x7EC4;&#x4EF6;</h1>
+<p><strong>&#x4E1A;&#x52A1;&#x7EC4;&#x4EF6;&#x9700;&#x8981;&#x80FD;&#x5355;&#x72EC;&#x8C03;&#x8BD5;&#xFF0C;&#x4E5F;&#x80FD;&#x96C6;&#x6210;&#x6253;&#x5305;&#xFF0C;&#x4E14;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x4E2D;&#x4E0D;&#x80FD;&#x4FEE;&#x6539;Kotlin&#x4EE3;&#x7801; </strong></p>
+<p>&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6;&#xFF0C;&#x9700;&#x8981;</p>
+<ul>
+<li>build.gradle</li>
+<li>AndroidManifest.xml</li>
+<li>Application</li>
+<li>Activity</li>
+</ul>
+<h2 id="buildgradle">build.gradle</h2>
+<h3 id="&#x6982;&#x5FF5;">&#x6982;&#x5FF5;</h3>
+<p><code>project.plugins.apply(&apos;com.android.application&apos;)</code><strong>&#x53EF;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x53EF;&#x8FD0;&#x884C;&#x7684;&#x5E94;&#x7528;</strong></p>
+<p><code>project.plugins.apply(&apos;com.android.library&apos;)</code> <strong>&#x53EF;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6; </strong></p>
+<p>&#x5F53;&#x4E1A;&#x52A1;&#x7EC4;&#x4EF6;&#x60F3;&#x5355;&#x72EC;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x5E94;&#x7528;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x52A8;&#x6001;&#x5C06;build&#x6587;&#x4EF6;&#x4FEE;&#x6539;</p>
+<h3 id="&#x6838;&#x5FC3;">&#x6838;&#x5FC3;</h3>
+<p><strong>gradle.properties</strong>&#x662F;Gradle&#x7684;&#x9759;&#x6001;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x53EF;&#x5728;Sync Project&#x65F6;&#x63D0;&#x4F9B;&#x914D;&#x7F6E;</p>
+<p>&#x5728;&#x6B64;&#x6587;&#x4EF6;&#x4E2D;&#x5B9A;&#x4E49; <strong>SYLINK_IS_BUILD_MODULE</strong> &#x53C2;&#x6570;&#xFF0C;</p>
+<p>&#x5F53;&#x53C2;&#x6570;&#x4E3A;true&#x65F6;&#xFF0C;&#x4EE3;&#x8868;&#x5355;&#x72EC;&#x8C03;&#x8BD5;&#x4E1A;&#x52A1;&#x7EC4;&#x4EF6;&#xFF0C;&#x4E3A;false&#x65F6;&#xFF0C;&#x4EE3;&#x8868;&#x4E1A;&#x52A1;&#x7EC4;&#x4EF6;&#x4F9D;&#x8D56;&#x4E8E;&#x58F3;APP&#xFF0C;&#x96C6;&#x6210;&#x8C03;&#x8BD5;</p>
+<h3 id="&#x5B9E;&#x73B0;">&#x5B9E;&#x73B0;</h3>
+<p>&#x5728;&#x4E1A;&#x52A1;&#x7EC4;&#x4EF6;&#x7684;build.gradle&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x52A8;&#x6001;&#x5224;&#x65AD;&#xFF0C;&#x5B9E;&#x73B0;&#x6839;&#x636E;<strong>SYLINK_IS_BUILD_MODULE</strong> &#x52A8;&#x6001;&#x5207;&#x6362;apply&#x63D2;&#x4EF6;&#x548C;&#x8BBE;&#x7F6E;&#x5305;&#x540D;</p>
+<pre class="language-"><code class="lang-groovy"><span class="token keyword">if</span> <span class="token punctuation">(</span>project<span class="token punctuation">.</span>name <span class="token operator">==</span> <span class="token string">&apos;app&apos;</span>
+        <span class="token operator">||</span> <span class="token punctuation">(</span><span class="token operator">!</span>sylinkProperties<span class="token punctuation">.</span><span class="token function">getSYLINK_IS_JENKINS</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token operator">&amp;&amp;</span> sylinkProperties<span class="token punctuation">.</span><span class="token function">getSYLINK_IS_BUILD_MODULE</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token operator">&amp;&amp;</span> project<span class="token punctuation">.</span>name<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span><span class="token string">&apos;app&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    project<span class="token punctuation">.</span>plugins<span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span><span class="token string">&apos;com.android.application&apos;</span><span class="token punctuation">)</span>
+    project<span class="token punctuation">.</span>plugins<span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span><span class="token string">&apos;com.didi.drouter&apos;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    project<span class="token punctuation">.</span>plugins<span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span><span class="token string">&apos;com.android.library&apos;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+android <span class="token punctuation">{</span>
+    defaultConfig <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>SYLINK_IS_BUILD_MODULE<span class="token punctuation">.</span><span class="token function">toBoolean</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>SYLINK_IS_JENKINS<span class="token punctuation">.</span><span class="token function">toBoolean</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            applicationId <span class="token string">&quot;com.sylink.app.dfs.xxx&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="androidmanifestxml">AndroidManifest.xml</h2>
+<h3 id="&#x6982;&#x5FF5;">&#x6982;&#x5FF5;</h3>
+<p>&#x5F53;&#x4F5C;&#x4E3A;&#x5E94;&#x7528;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;<strong>&#x9700;&#x8981;&#x6307;&#x5B9A;Application&#x548C;&#x542F;&#x52A8;&#x7684;Activity&#xFF0C;&#x5E76;&#x6CE8;&#x518C;&#x7EC4;&#x4EF6;&#x5185;Activity</strong></p>
+<p>&#x5F53;&#x4F5C;&#x4E3A;&#x7EC4;&#x4EF6;&#x88AB;&#x4F9D;&#x8D56;&#x65F6;&#xFF0C;<strong>&#x4EC5;&#x9700;&#x8981;&#x6CE8;&#x518C;&#x7EC4;&#x4EF6;&#x5185;Activity</strong></p>
+<h3 id="&#x6838;&#x5FC3;">&#x6838;&#x5FC3;</h3>
+<p>&#x7EC4;&#x4EF6;&#x5185;&#x6709;MainActivity&#x4F5C;&#x4E3A;&#x542F;&#x52A8;&#x7684;Activity&#xFF0C;</p>
+<p>&#x5BBF;&#x4E3B;APP&#x6709;LoginActivity&#x4F5C;&#x4E3A;&#x542F;&#x52A8;&#x7684;Activity&#xFF0C;</p>
+<p>&#x7531;&#x4E8E;&#x5B9A;&#x4E49;&#x4E86;&#x591A;&#x4E2A;&#x542F;&#x52A8;Activity&#xFF0C;</p>
+<p>&#x5F53;&#x7EC4;&#x4EF6;&#x88AB;&#x4F9D;&#x8D56;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;&#x4F1A;&#x51FA;&#x73B0;AndroidManifest&#x51B2;&#x7A81;</p>
+<h3 id="&#x5B9E;&#x73B0;">&#x5B9E;&#x73B0;</h3>
+<p>&#x4F7F;&#x7528;xml&#x7684;tools:node&#x65B9;&#x6CD5;</p>
+<p>&#x5728;&#x5BBF;&#x4E3B;APP&#x7684;AndroidManifest&#x4E2D;&#x52A0;&#x5165;&#x7EC4;&#x4EF6;&#x7684;&#x542F;&#x52A8;Activity&#xFF0C;&#x5E76;&#x52A0;&#x4E0A;<code>tools:node=&quot;remove&quot;</code> &#x5C5E;&#x6027;&#xFF0C;</p>
+<p>&#x8FD9;&#x6837;&#x5F53;&#x7EC4;&#x4EF6;&#x88AB;&#x4F9D;&#x8D56;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;AndroidManifest&#x5408;&#x5E76;&#x65F6;&#x4F1A;&#x5254;&#x9664;&#x6389;&#x7EC4;&#x4EF6;Activity&#x7684;&#x5B9A;&#x4E49;</p>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>activity</span>
+    <span class="token attr-name"><span class="token namespace">android:</span>name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>com.sylink.app.dfs.fixture.FixtureMainActivity<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">tools:</span>node</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>remove<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+</code></pre>
+<h2 id="application">Application</h2>
+<h3 id="&#x6982;&#x5FF5;">&#x6982;&#x5FF5;</h3>
+<p>&#x6BCF;&#x4E2A;&#x5E94;&#x7528;&#x90FD;&#x8981;&#x6709;&#x4E00;&#x4E2A;Application&#xFF0C;&#x53EF;&#x5728;&#x5176;&#x5185;&#x5199;&#x4E00;&#x4E9B;SDK&#x7684;&#x521D;&#x59CB;&#x5316;&#x65B9;&#x6CD5;</p>
+<p>&#x5404;&#x4E2A;&#x7EC4;&#x4EF6;&#x5982;&#x4F55;&#x521D;&#x59CB;&#x5316;&#x51B3;&#x5B9A;&#x4E86;&#x7EC4;&#x4EF6;&#x5316;&#x662F;&#x5426;&#x53EF;&#x63D2;&#x62D4;</p>
+<p>&#x6709;&#x4E9B;&#x67B6;&#x6784;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;Application&#x5728;&#x5BBF;&#x4E3B;app&#x4E2D;&#xFF0C;&#x8BA9;&#x5BBF;&#x4E3B;app&#x4F9D;&#x8D56;&#x6240;&#x6709;&#x5B50;&#x6A21;&#x5757;&#xFF0C;&#x6765;&#x5B9E;&#x73B0;&#x5B50;&#x6A21;&#x5757;&#x7684;&#x521D;&#x59CB;&#x5316;&#x65B9;&#x6CD5;</p>
+<p>&#x8FD9;&#x6837;&#x5C31;&#x4F1A;&#x5BFC;&#x81F4;&#x5B50;&#x6A21;&#x5757;&#x65E0;&#x6CD5;&#x5B9E;&#x73B0;&#x53EF;&#x63D2;&#x62D4;&#xFF0C;&#x5373;&#x5BBF;&#x4E3B;app&#x5FC5;&#x987B;&#x4F9D;&#x8D56;&#x6240;&#x6709;&#x5B50;&#x6A21;&#x5757;&#x624D;&#x80FD;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#xFF0C;&#x8FD9;&#x660E;&#x663E;&#x4E0D;&#x6EE1;&#x8DB3;&#x7EC4;&#x4EF6;&#x5316;&#x7684;&#x601D;&#x60F3;</p>
+<h3 id="&#x6838;&#x5FC3;">&#x6838;&#x5FC3;</h3>
+<p>&#x5728;frame&#x7EC4;&#x4EF6;&#x4E2D;&#x5B9A;&#x4E49;SylinkBaseApp&#xFF0C;&#x5728;&#x4E1A;&#x52A1;&#x7EC4;&#x4EF6;&#x7684;AndroidManifest&#x4E2D;&#x90FD;&#x4F7F;&#x7528;SylinkBaseApp</p>
+<p>&#x4F7F;&#x7528;App Startup&#x6216;&#x4EE3;&#x7406;SylinkBaseApp&#x751F;&#x547D;&#x5468;&#x671F;&#x7684;&#x65B9;&#x6CD5;&#x5B9E;&#x73B0;&#x7EC4;&#x4EF6;&#x5185;&#x7684;&#x521D;&#x59CB;&#x5316;&#x65B9;&#x6CD5;</p>
+<h3 id="&#x5B9E;&#x73B0;">&#x5B9E;&#x73B0;</h3>
+<p>&#x65B9;&#x6848;&#x6709;&#x4E24;&#x79CD;&#xFF0C;&#x4E00;&#x79CD;&#x53EF;&#x4EE5;&#x5728;frame&#x4E2D;&#x5B9A;&#x4E49;BaseApplication&#xFF0C;&#x5E76;&#x5B9A;&#x4E49;Application&#x751F;&#x547D;&#x5468;&#x671F;&#x7684;&#x56DE;&#x8C03;&#x63A5;&#x53E3;&#xFF0C;&#x5404;&#x4E2A;&#x6A21;&#x5757;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x5E76;&#x6CE8;&#x518C;&#x5230;BaseApplication&#x4E2D;&#xFF0C;</p>
+<p>&#x901A;&#x8FC7;&#x63A5;&#x53E3;&#x6765;&#x4EE3;&#x7406;Application&#x751F;&#x547D;&#x5468;&#x671F;&#x5B9E;&#x73B0;&#x6A21;&#x5757;&#x521D;&#x59CB;&#x5316;&#x3002;</p>
+<p>DFS&#x4F7F;&#x7528;&#x7B2C;&#x4E8C;&#x79CD;&#x65B9;&#x6CD5;&#xFF0C;&#x5373;&#x4F7F;&#x7528; <strong><a href="https://developer.android.com/reference/androidx/startup/package-summary" target="_blank">App Startup</a> </strong> <strong>&#x53EF;&#x5728;&#x5E94;&#x7528;&#x542F;&#x52A8;&#x65F6;&#x7B80;&#x5355;&#x3001;&#x9AD8;&#x6548;&#x5730;&#x521D;&#x59CB;&#x5316;&#x7EC4;&#x4EF6;</strong> </p>
+<p>&#x8FD9;&#x4E2A;&#x7EC4;&#x4EF6;&#x7684;&#x539F;&#x7406;&#x662F;&#x4F7F;&#x7528;ContentProvider&#x6765;&#x5B9E;&#x73B0;&#x521D;&#x59CB;&#x5316;&#xFF0C;ContentProvider&#x4F5C;&#x4E3A;Android&#x7684;&#x56DB;&#x5927;&#x7EC4;&#x4EF6;&#x4E4B;&#x4E00;&#x4E00;&#x76F4;&#x5F88;&#x9C9C;&#x4E3A;&#x4EBA;&#x77E5;&#xFF0C;&#x5E73;&#x65F6;&#x7528;&#x5230;&#x7684;&#x4E5F;&#x4E0D;&#x591A;&#xFF0C;</p>
+<p>&#x4F46;ContentProvider&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x505A;&#x521D;&#x59CB;&#x5316;&#x5DE5;&#x4F5C;&#xFF0C;&#x4ED6;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x5728;Application&#x7684;attachBaseContext&#x540E;&#xFF0C;onCreate&#x4E4B;&#x524D;&#x3002;</p>
+<p>App Startup&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;ContentProvider&#xFF0C;&#x5E76;&#x63D0;&#x4F9B;&#x4E86;&#x521D;&#x59CB;&#x5316;&#x63A5;&#x53E3;create&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x63A5;&#x53E3;&#x5E76;&#x5199;&#x4E0A;&#x7EC4;&#x4EF6;&#x7684;&#x521D;&#x59CB;&#x5316;&#x65B9;&#x6CD5;&#xFF0C;&#x5C31;&#x53EF;&#x5B9E;&#x73B0;&#x7EC4;&#x4EF6;&#x5728;&#x5E94;&#x7528;</p>
+<p>&#x542F;&#x52A8;&#x65F6;&#x8C03;&#x7528;&#x8FD9;&#x4E9B;&#x521D;&#x59CB;&#x5316;&#x65B9;&#x6CD5;&#xFF0C;&#x4ECE;&#x800C;&#x8FBE;&#x5230;&#x4EE3;&#x7801;&#x9694;&#x79BB;&#x7684;&#x76EE;&#x6807;&#x3002;</p>
+<p>&#x800C;<strong><a href="https://github.com/idisfkj/android-startup" target="_blank">android-startup</a></strong>&#x662F;<strong>&#x63D0;&#x4F9B;&#x4E00;&#x79CD;&#x5728;&#x5E94;&#x7528;&#x542F;&#x52A8;&#x65F6;&#x80FD;&#x591F;&#x66F4;&#x52A0;&#x7B80;&#x5355;&#x3001;&#x9AD8;&#x6548;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x521D;&#x59CB;&#x5316;&#x7EC4;&#x4EF6;</strong>&#xFF0C;&#x8FD9;&#x4E2A;&#x5E93;&#x662F;&#x5BF9;App Startup&#x7684;&#x4F18;&#x5316;&#x5B9E;&#x73B0;&#xFF0C;&#x652F;&#x6301;&#x4E86;&#x7EBF;&#x7A0B;&#x63A7;&#x5236;&#x548C;&#x591A;&#x8FDB;&#x7A0B;&#x8C03;&#x7528;</p>
+<p>&#x5982;&#x4E0B;&#x662F;&#x5B9A;&#x4E49;&#x5728;event&#x5305;&#x5185;&#x7684; <strong>android-startup</strong>&#x7684;&#x57FA;&#x7C7B;</p>
+<p><img src="&#x4E1A;&#x52A1;&#x7EC4;&#x4EF6;.assets/image-20211028173156669.png" alt="image-20211028173156669"></p>
+<p>&#x7531;&#x4E8E;&#x4E3B;&#x8FDB;&#x7A0B;&#x5DF2;&#x7ECF;&#x6709;&#x9ED8;&#x8BA4;&#x5B9A;&#x4E49;&#x7684;ContentProvider&#xFF0C;&#x4F46;&#x5B50;&#x8FDB;&#x7A0B;&#x6CA1;&#x6709;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x81EA;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;MultipleProcessStartupProvider&#x4F5C;&#x4E3A;&#x5B50;&#x8FDB;&#x7A0B;&#x7684;ContentProvider</p>
+<p>&#x7531;&#x4E8E;&#x7EC4;&#x4EF6;&#x4E4B;&#x95F4;&#x6709;&#x521D;&#x59CB;&#x5316;&#x987A;&#x5E8F;&#x8981;&#x6C42;&#xFF0C;&#x6240;&#x4EE5;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;BaseInit&#xFF0C;&#x540E;&#x7EED;&#x5176;&#x4ED6;&#x6A21;&#x5757;&#x7684;Init&#x7C7B;&#x5FC5;&#x987B;&#x5728;&#x8FD9;&#x4E2A;&#x7C7B;&#x521D;&#x59CB;&#x5316;&#x5B8C;&#x4E4B;&#x540E;&#x8FDB;&#x884C;&#xFF0C;FrameInitDelegate&#x4E3A;&#x57FA;&#x7840;&#x521D;&#x59CB;&#x5316;&#x4EE3;&#x7406;&#x7C7B;&#xFF0C;</p>
+<p>&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E9B;&#x6240;&#x6709;&#x7EC4;&#x4EF6;&#x90FD;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x5DE5;&#x5177;&#x7C7B;&#xFF0C;&#x5982;MMKV&#xFF0C;Timber&#x7B49;</p>
+<p>BaseInit&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-kotlin"><span class="token keyword">class</span> BaseInit <span class="token operator">:</span> AndroidStartup<span class="token operator">&lt;</span>Unit<span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token comment">//&#x662F;&#x5426;&#x5728;&#x4E3B;&#x7EBF;&#x7A0B;&#x8C03;&#x7528;</span>
+    <span class="token keyword">override</span> <span class="token keyword">fun</span> <span class="token function">callCreateOnMainThread</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> Boolean <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">override</span> <span class="token keyword">fun</span> <span class="token function">create</span><span class="token punctuation">(</span>context<span class="token operator">:</span> Context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">FrameInitDelegate</span><span class="token punctuation">(</span>context <span class="token keyword">as</span> Application<span class="token punctuation">)</span>
+        startKoin <span class="token punctuation">{</span>
+            <span class="token function">logger</span><span class="token punctuation">(</span><span class="token function">KoinLogger</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token function">androidContext</span><span class="token punctuation">(</span>context<span class="token punctuation">)</span>
+            <span class="token function">fragmentFactory</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        <span class="token punctuation">}</span>
+        Timber<span class="token punctuation">.</span><span class="token function">d</span><span class="token punctuation">(</span><span class="token string">&quot;Base&#x6A21;&#x5757;&#x521D;&#x59CB;&#x5316;,&#x6CE8;&#x5165;KoinApplication&quot;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+
+    <span class="token comment">//&#x662F;&#x5426;&#x963B;&#x585E;&#x4E3B;&#x7EBF;&#x7A0B;</span>
+    <span class="token keyword">override</span> <span class="token keyword">fun</span> <span class="token function">waitOnMainThread</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> Boolean <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span>
+
+
+<span class="token punctuation">}</span>
+</code></pre>
+<p>BaseRemoteInit&#x5982;&#x4E0B;&#xFF1A;</p>
+<p>&#x7531;&#x4E8E;&#x662F;&#x5728;&#x5B50;&#x8FDB;&#x7A0B;&#x8FD0;&#x884C;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x52A0;&#x5165;<code>@MultipleProcess(&quot;:remote&quot;)</code>&#x6CE8;&#x89E3;&#x6765;&#x5B9A;&#x4E49;&#x5F00;&#x542F;&#x8FDB;&#x7A0B;</p>
+<pre class="language-"><code class="lang-kotlin"><span class="token annotation builtin">@MultipleProcess</span><span class="token punctuation">(</span><span class="token string">&quot;:remote&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">class</span> BaseRemoteInit <span class="token operator">:</span> AndroidStartup<span class="token operator">&lt;</span>Unit<span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">override</span> <span class="token keyword">fun</span> <span class="token function">callCreateOnMainThread</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> Boolean <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">override</span> <span class="token keyword">fun</span> <span class="token function">create</span><span class="token punctuation">(</span>context<span class="token operator">:</span> Context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">RemoteInitDelegate</span><span class="token punctuation">(</span>context <span class="token keyword">as</span> Application<span class="token punctuation">)</span>
+        startKoin <span class="token punctuation">{</span>
+            <span class="token function">logger</span><span class="token punctuation">(</span><span class="token function">KoinLogger</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token function">androidContext</span><span class="token punctuation">(</span>context<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+        Timber<span class="token punctuation">.</span><span class="token function">d</span><span class="token punctuation">(</span><span class="token string">&quot;BaseRemote&#x6A21;&#x5757;&#x521D;&#x59CB;&#x5316;,&#x6CE8;&#x5165;KoinApplication&quot;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+
+    <span class="token keyword">override</span> <span class="token keyword">fun</span> <span class="token function">waitOnMainThread</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> Boolean <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span>
+
+
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6700;&#x540E;&#x4E0D;&#x8981;&#x5FD8;&#x4E86;&#x5728;xml&#x4E2D;&#x5B9A;&#x4E49;&#x914D;&#x7F6E;&#x7C7B;&#x548C;&#x5B50;&#x8FDB;&#x7A0B;&#x7684;ContentProvider</p>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>provider</span>
+    <span class="token attr-name"><span class="token namespace">android:</span>name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>com.rousetime.android_startup.provider.StartupProvider<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>authorities</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>${SYLINK_APPLICATION_ID}.android_startup<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>exported</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta-data</span>
+        <span class="token attr-name"><span class="token namespace">android:</span>name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>com.sylink.dfs.app.event.init.main.BaseInit<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name"><span class="token namespace">android:</span>value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>android.startup<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta-data</span>
+        <span class="token attr-name"><span class="token namespace">android:</span>name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>com.sylink.dfs.app.event.init.main.provider.StartupConfigProvider<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name"><span class="token namespace">android:</span>value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>android.startup.provider.config<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>provider</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>provider</span>
+    <span class="token attr-name"><span class="token namespace">android:</span>name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>com.sylink.dfs.app.event.init.remote.provider.MultipleProcessStartupProvider<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>authorities</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>${SYLINK_APPLICATION_ID}.android_startup.remote<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>exported</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>process</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>:remote<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta-data</span>
+        <span class="token attr-name"><span class="token namespace">android:</span>name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>com.sylink.dfs.app.event.init.remote.BaseRemoteInit<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name"><span class="token namespace">android:</span>value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>android.startup<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta-data</span>
+        <span class="token attr-name"><span class="token namespace">android:</span>name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>com.sylink.dfs.app.event.init.remote.provider.RemoteStartupConfigProvider<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name"><span class="token namespace">android:</span>value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>android.startup.provider.config<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>provider</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>&#x5728;&#x5176;&#x4ED6;&#x6A21;&#x5757;&#x4E2D;&#x4F7F;&#x7528;&#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x5B9E;&#x73B0;<code>dependencies</code>&#x63A5;&#x53E3;&#xFF0C;&#x5B9A;&#x4E49;NetworkInit&#x7684;onCreate&#x65B9;&#x6CD5;&#x5728;BaseInit&#x521D;&#x59CB;&#x5316;&#x5B8C;&#x6210;&#x540E;&#x8FDB;&#x884C;</p>
+<pre class="language-"><code class="lang-kotlin"><span class="token keyword">class</span> NetworkInit <span class="token operator">:</span> AndroidStartup<span class="token operator">&lt;</span>Unit<span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">override</span> <span class="token keyword">fun</span> <span class="token function">callCreateOnMainThread</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> Boolean <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">override</span> <span class="token keyword">fun</span> <span class="token function">create</span><span class="token punctuation">(</span>context<span class="token operator">:</span> Context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">loadKoinModules</span><span class="token punctuation">(</span><span class="token function">listOf</span><span class="token punctuation">(</span>networkAppModule<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">override</span> <span class="token keyword">fun</span> <span class="token function">waitOnMainThread</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> Boolean <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">override</span> <span class="token keyword">fun</span> <span class="token function">dependencies</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> List<span class="token operator">&lt;</span>Class<span class="token operator">&lt;</span><span class="token keyword">out</span> Startup<span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token function">listOf</span><span class="token punctuation">(</span>BaseInit<span class="token operator">::</span><span class="token keyword">class</span><span class="token punctuation">.</span>java<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x901A;&#x8FC7; <strong>android-startup</strong> &#x6211;&#x4EEC;&#x5C31;&#x5B9E;&#x73B0;&#x4E86;&#x7EC4;&#x4EF6;&#x95F4;&#x7684;&#x521D;&#x59CB;&#x5316;&#x4EE3;&#x7801;&#x9694;&#x79BB;&#xFF0C;&#x771F;&#x6B63;&#x7684;&#x505A;&#x5230;&#x4E86;&#x53EF;&#x63D2;&#x62D4;&#x7EC4;&#x4EF6;</p>
+<h2 id="activity">Activity</h2>
+<h3 id="&#x6982;&#x5FF5;">&#x6982;&#x5FF5;</h3>
+<p>&#x9875;&#x9762;&#x8DF3;&#x8F6C;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#x539F;&#x59CB;&#x7684;Intent&#x5F62;&#x5F0F;&#xFF0C;&#x56E0;&#x4E3A;Intent&#x5F62;&#x5F0F;&#x4F1A;&#x663E;&#x793A;&#x58F0;&#x660E;Activity::class.java</p>
+<h3 id="&#x6838;&#x5FC3;">&#x6838;&#x5FC3;</h3>
+<p>&#x4F7F;&#x7528;&#x8DEF;&#x7531;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x9875;&#x9762;&#x7684;&#x8DF3;&#x8F6C;</p>
+<h3 id="&#x5B9E;&#x73B0;">&#x5B9E;&#x73B0;</h3>
+<p>DFS&#x4F7F;&#x7528;&#x4E86;<a href="https://github.com/didi/DRouter" target="_blank">DRouter</a> &#x6765;&#x5B9E;&#x73B0;&#x9875;&#x9762;&#x95F4;&#x7684;&#x8DEF;&#x7531;&#x8DF3;&#x8F6C;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x7684;build.gradle&#x4E2D;&#x52A0;&#x5165;</p>
+<pre class="language-"><code class="lang-groovy">dependencies <span class="token punctuation">{</span>        
+     classpath <span class="token string">&quot;io.github.didi:drouter-plugin-proxy:1.0.1&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x5728;&#x7EC4;&#x4EF6;&#x7684;build.gradle&#x4E2D;&#x52A0;&#x5165;</p>
+<pre class="language-"><code>api &quot;io.github.didi:drouter-api:2.1.3&quot;
+</code></pre><p>&#x5728;Activity&#x4E0A;&#x52A0;&#x5165;&#x8DEF;&#x7531;</p>
+<pre class="language-"><code class="lang-kotlin"><span class="token annotation builtin">@Router</span><span class="token punctuation">(</span>path <span class="token operator">=</span> HomeRoutePath<span class="token punctuation">.</span>home_activity_path<span class="token punctuation">)</span>
+<span class="token keyword">class</span> HomeActivity <span class="token operator">:</span> <span class="token function">BaseActivity</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</code></pre>
+<p>&#x8DF3;&#x8F6C;&#x65B9;&#x6CD5;</p>
+<pre class="language-"><code class="lang-kotlin">DRouter<span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span>HomeRoutePath<span class="token punctuation">.</span>home_activity_path<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="koin">Koin</h2>
+<h3 id="&#x6982;&#x5FF5;">&#x6982;&#x5FF5;</h3>
+<p>&#x5728;&#x7EC4;&#x4EF6;&#x5316;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x4E00;&#x76F4;&#x662F;&#x4E2A;&#x96BE;&#x70B9;&#xFF0C;&#x4F20;&#x7EDF;&#x7684;Dagger2&#xFF0C;AndroidDagger&#x5BF9;&#x7EC4;&#x4EF6;&#x5316;&#x90FD;&#x4E0D;&#x662F;&#x5F88;&#x53CB;&#x597D;&#xFF08;&#x9700;&#x8981;&#x6539;&#x6E90;&#x7801;&#xFF09;&#xFF0C;&#x4EB2;&#x6D4B;Hilt&#x540E;&#x53D1;&#x73B0;&#x5B9E;&#x73B0;&#x8D77;&#x6765;&#x4E5F;&#x4E0D;&#x65B9;&#x4FBF;&#x3002;</p>
+<p> <strong>&#x6700;&#x540E;&#x4F7F;&#x7528;&#x4E86;Koin&#xFF0C;&#x53D1;&#x73B0;Koin&#x4F5C;&#x4E3A;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x6846;&#x67B6;&#x914D;&#x7F6E;&#x7B80;&#x5355;&#xFF0C;&#x53C8;&#x6709;Kotlin&#x7684;&#x539F;&#x751F;&#x652F;&#x6301;&#xFF0C;&#x8FD8;&#x9488;&#x5BF9;Android&#x6709;&#x5177;&#x4F53;&#x7684;API&#xFF0C;&#x975E;&#x5E38;&#x53CB;&#x597D;</strong></p>
+<h3 id="&#x6838;&#x5FC3;">&#x6838;&#x5FC3;</h3>
+<p>&#x6BCF;&#x4E2A;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x6846;&#x67B6;&#x7684;&#x6982;&#x5FF5;&#x90FD;&#x5927;&#x540C;&#x5C0F;&#x5F02;&#xFF0C;&#x6709;&#x4E00;&#x4E2A;&#x6CE8;&#x5165;&#x7684;&#x5165;&#x53E3;&#xFF0C;&#x6709;&#x4E00;&#x4E2A;&#x4ED3;&#x5E93;&#x7528;&#x6765;&#x5B9A;&#x4E49;&#x9700;&#x8981;&#x88AB;&#x6CE8;&#x5165;&#x7684;&#x7C7B;&#xFF0C;&#x4EE5;&#x53CA;&#x6700;&#x540E;&#x7684;&#x6CE8;&#x5165;&#x65B9;&#x6CD5;</p>
+<p>&#x5982;&#x679C;&#x719F;&#x6089;Dagger&#x7684;&#x540C;&#x5B66;&#xFF0C;&#x90A3;&#x4E48;&#x4E0A;&#x8FF0;&#x5728;Dagger&#x4E2D;&#x5206;&#x522B;&#x4EE3;&#x8868;Component&#xFF0C;Module&#xFF0C;inject&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x5728;Koin&#x4E2D;&#xFF0C;&#x8FD9;&#x5206;&#x522B;&#x4EE3;&#x8868;startKoin&#xFF0C;loadKoinModule &#x548C; by inject()</p>
+<p>&#x5176;&#x4E2D;startKoin&#x5C5E;&#x4E8E;&#x6574;&#x4E2A;Koin&#x7684;&#x521D;&#x59CB;&#x5316;&#x65B9;&#x6CD5;&#xFF0C;&#x4F1A;&#x6CE8;&#x5165;application&#xFF0C;&#x6240;&#x4EE5;&#x53EA;&#x80FD;&#x8C03;&#x7528;&#x4E00;&#x6B21;</p>
+<p>loadKoinModule&#x5C5E;&#x4E8E;&#x52A8;&#x6001;&#x6CE8;&#x5165;Module&#x4ED3;&#x5E93;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x591A;&#x6B21;&#x8C03;&#x7528;</p>
+<p>&#x6CE8;&#x5165;&#x65B9;&#x6CD5;&#x7531;&#x4E8E;DSL&#x7684;&#x5B58;&#x5728;&#x548C;Koin&#x5BF9;Android&#x7684;&#x652F;&#x6301;&#x4F18;&#x5316;&#xFF0C;&#x6700;&#x540E;&#x7684;&#x6CE8;&#x5165;&#x65B9;&#x6CD5;&#x5DF2;&#x7ECF;&#x88AB;Koin&#x5C01;&#x88C5;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x76F4;&#x63A5;&#x4F7F;&#x7528;by inject()&#x6CE8;&#x5165;&#x4F7F;&#x7528;&#x5373;&#x53EF;</p>
+<h3 id="&#x5B9E;&#x73B0;">&#x5B9E;&#x73B0;</h3>
+<p>&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x9700;&#x8981;&#x8DDF;&#x7740;&#x9879;&#x76EE;/&#x7EC4;&#x4EF6;&#x4E00;&#x8D77;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x9009;&#x62E9;&#x5728;android-startup&#x4E2D;&#x521D;&#x59CB;&#x5316;Koin</p>
+<ol>
+<li><p>&#x5728;<code>BaseInit</code>&#x4E2D;&#x8C03;&#x7528;startKoin&#x65B9;&#x6CD5;&#xFF0C;KoinLogger&#x662F;DFS&#x81EA;&#x5DF1;&#x5B9E;&#x73B0;&#x7684;Koin&#x65E5;&#x5FD7;&#x6253;&#x5370;&#x5B9E;&#x73B0;&#xFF0C;androidContext&#x662F;&#x7ED9;Koin&#x6CE8;&#x5165;&#x4E0A;&#x4E0B;&#x6587;&#xFF0C;fragmentFactory&#x662F;&#x8C37;&#x6B4C;&#x65B0;&#x63A8;&#x51FA;&#x7684;fragment&#x6709;&#x53C2;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x7684;Fragment&#x751F;&#x4EA7;&#x5DE5;&#x5382;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x4F7F;&#x7528;&#x5230;&#x53EF;&#x5177;&#x4F53;<a href="https://juejin.cn/post/6844904167685750798" target="_blank">&#x4E86;&#x89E3;</a>&#xFF0C;&#x8FD9;&#x8FB9;&#x4E0D;&#x518D;&#x8D58;&#x8FF0;&#x3002;</p>
+<pre class="language-"><code class="lang-kotlin">startKoin <span class="token punctuation">{</span>
+    <span class="token function">logger</span><span class="token punctuation">(</span><span class="token function">KoinLogger</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token function">androidContext</span><span class="token punctuation">(</span>context<span class="token punctuation">)</span>
+    <span class="token function">fragmentFactory</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>&#x5728;&#x5404;&#x4E2A;&#x6A21;&#x5757;&#x4E2D;&#x5B9A;&#x4E49;di&#x5305;&#xFF0C;&#x5176;&#x4E2D;&#x653E;module&#x7C7B;&#xFF0C;&#x65B0;&#x5EFA;xxxModule&#x7C7B;&#x5B58;&#x653E;&#x666E;&#x901A;&#x7684;&#x5B9E;&#x4F8B;&#xFF08;&#x5982;&#x5404;&#x4E2A;&#x6A21;&#x5757;&#x7684;ApiService&#xFF09;&#xFF0C;</p>
+<p>&#x65B0;&#x5EFA;xxxViewModelModule.kt&#x7C7B;&#xFF0C;&#x5B58;&#x653E;viewModel&#x7C7B;&#xFF0C;</p>
+<p>get&lt;&gt;()&#x65B9;&#x6CD5;&#x80FD;&#x4ECE;&#x5176;&#x4ED6;&#x5DF2;&#x7ECF;&#x88AB;&#x6CE8;&#x5165;&#x7684;Module&#x4E2D;&#x83B7;&#x53D6;&#x5B9E;&#x4F8B;&#xFF0C;</p>
+<p>&#x7528;single&#x5B9A;&#x4E49;&#x7684;&#x5B9E;&#x4F8B;&#x4E3A;&#x5355;&#x4F8B;</p>
+<p>&#x7528;viewModel&#x5B9A;&#x4E49;&#x7684;&#x7C7B;&#x53EF;&#x5728;&#x540E;&#x9762;&#x6CE8;&#x5165;&#x65F6;&#x81EA;&#x52A8;&#x7ED1;&#x5B9A;activity / fragment&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;</p>
+<p>&#x7528;factory&#x5B9A;&#x4E49;&#x7684;&#x7C7B;&#x6BCF;&#x6B21;&#x6CE8;&#x5165;&#x65F6;&#x90FD;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5355;&#x4F8B;</p>
+<pre class="language-"><code class="lang-kotlin"><span class="token keyword">val</span> storageModule <span class="token operator">=</span> module <span class="token punctuation">{</span>
+
+    single<span class="token operator">&lt;</span>StorageApiService<span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">get</span><span class="token operator">&lt;</span>Retrofit<span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span>StorageApiService<span class="token operator">::</span><span class="token keyword">class</span><span class="token punctuation">.</span>java<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4E0B;&#x9762;&#x7684;viewModel&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x6784;&#x9020;&#x53C2;&#x6570;&#x662F;StorageApiService&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;get()&#x65B9;&#x6CD5;&#x83B7;&#x5F97;&#x4E0A;&#x9762;&#x5B9A;&#x4E49;&#x7684;&#x5355;&#x4F8B;&#x5B9E;&#x4F8B;</p>
+<pre class="language-"><code class="lang-kotlin"><span class="token keyword">val</span> storageViewModelModule <span class="token operator">=</span> module <span class="token punctuation">{</span>
+    viewModel <span class="token punctuation">{</span>
+        <span class="token function">StorageOutInViewModel</span><span class="token punctuation">(</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    viewModel <span class="token punctuation">{</span>
+        <span class="token function">StoragePickViewModel</span><span class="token punctuation">(</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>&#x5728;&#x5404;&#x4E2A;&#x6A21;&#x5757;&#x7684;Init&#x7C7B;&#x7684;onCreate&#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;&#x8C03;&#x7528;loadKoinModules&#x65B9;&#x6CD5;&#xFF0C;&#x53C2;&#x6570;&#x4E3A;&#x672C;&#x6A21;&#x5757;&#x7684;module&#x6570;&#x7EC4;</p>
+<pre class="language-"><code class="lang-kotlin"><span class="token keyword">class</span> StorageInit <span class="token operator">:</span> <span class="token function">BaseAndroidStartup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">override</span> <span class="token keyword">fun</span> <span class="token function">create</span><span class="token punctuation">(</span>context<span class="token operator">:</span> Context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">loadKoinModules</span><span class="token punctuation">(</span><span class="token function">listOf</span><span class="token punctuation">(</span>storageViewModelModule<span class="token punctuation">,</span> storageFragmentModule<span class="token punctuation">,</span> storageModule<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>&#x5728;activity&#x4E2D;&#x6CE8;&#x5165;viewModel&#xFF0C;by viewModel()&#x662F;Koin&#x5B9A;&#x4E49;&#x7684;DSL&#xFF0C;&#x8FD9;&#x6837;&#x6CE8;&#x5165;&#x540E;viewModel&#x5373;&#x53EF;&#x81EA;&#x52A8;&#x7ED1;&#x5B9A;Activity&#x751F;&#x547D;&#x5468;&#x671F;</p>
+<pre class="language-"><code class="lang-kotlin"><span class="token keyword">val</span> viewModel<span class="token operator">:</span> MaterialInventoryViewModel <span class="token keyword">by</span> <span class="token function">viewModel</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+</li>
+</ol>
+<p> <strong>&#x8FD9;&#x53EA;&#x662F;Koin&#x6700;&#x57FA;&#x7840;&#x7684;&#x7528;&#x6CD5;&#xFF0C;&#x66F4;&#x591A;&#x7684;&#x53EF;&#x67E5;&#x770B;<a href="https://insert-koin.io/docs/quickstart/android" target="_blank">&#x5B98;&#x7F51;</a>&#xFF0C;&#x76F8;&#x6BD4;&#x8D77;Dagger&#x751A;&#x81F3;&#x662F;Hilt&#xFF0C;Koin&#x53EF;&#x4EE5;&#x8BF4;&#x662F;&#x6700;&#x7B80;&#x5355;&#xFF0C;&#x5BF9;&#x7EC4;&#x4EF6;&#x5316;&#x652F;&#x6301;&#x6700;&#x53CB;&#x597D;&#x7684;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x6846;&#x67B6;&#x4E86;</strong></p>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> <a href="https://github.com/cmmdy" target="_blank">&#x5403;&#x732B;&#x732B;&#x7684;&#x9C7C;</a> </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> <i>&#x66F4;&#x65B0;&#x4E8E; </i> 2021-11-08 17:05:30 </span> </footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="技术栈.html" class="navigation navigation-prev " aria-label="Previous page: 技术栈">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="基础组件.html" class="navigation navigation-next " aria-label="Next page: 基础组件">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"业务组件","level":"1.2.4","depth":2,"next":{"title":"基础组件","level":"1.2.5","depth":2,"path":"组件化/基础组件.md","ref":"组件化/基础组件.md","articles":[]},"previous":{"title":"技术栈","level":"1.2.3","depth":2,"path":"组件化/技术栈.md","ref":"组件化/技术栈.md","articles":[]},"dir":"ltr"},"config":{"plugins":["intopic-toc","expandable-chapters-small","back-to-top-button","page-footer-ex","prism","-highlight","-lunr","-search","search-pro","splitter","hide-element","code"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"prism":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"page-footer-ex":{"copyright":"[吃猫猫的鱼](https://github.com/cmmdy)","markdown":true,"update_label":"<i>更新于 </i>","update_format":"YYYY-MM-DD HH:mm:ss"},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"周文韬","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"hello":"everyone"},"title":"Android","language":"zh-hans","gitbook":"*","description":"Andro知识点"},"file":{"path":"组件化/业务组件.md","mtime":"2021-11-08T09:05:30.953Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-08T09:33:47.382Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

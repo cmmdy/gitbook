@@ -1,0 +1,1134 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>基础组件 · Android</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="周文韬">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="业务组件.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="android架构.html">
+            
+                <a href="android架构.html">
+            
+                    
+                    android架构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="背景.html">
+            
+                <a href="背景.html">
+            
+                    
+                    背景
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="架构.html">
+            
+                <a href="架构.html">
+            
+                    
+                    架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="技术栈.html">
+            
+                <a href="技术栈.html">
+            
+                    
+                    技术栈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="业务组件.html">
+            
+                <a href="业务组件.html">
+            
+                    
+                    业务组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.5" data-path="基础组件.html">
+            
+                <a href="基础组件.html">
+            
+                    
+                    基础组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >基础组件</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x57FA;&#x7840;&#x7EC4;&#x4EF6;">&#x57FA;&#x7840;&#x7EC4;&#x4EF6;</h1>
+<p>&#x57FA;&#x7840;&#x7EC4;&#x4EF6;&#x8131;&#x79BB;&#x4E1A;&#x52A1;&#xFF0C;&#x5728;&#x516C;&#x53F8;&#x6240;&#x6709;&#x9879;&#x76EE;&#x4E2D;&#x90FD;&#x9002;&#x7528;&#xFF0C;&#x4E14;&#x9700;&#x8981;&#x4E0A;&#x4F20;&#x5230;maven&#xFF0C;&#x4EE5;&#x4E91;&#x7AEF;&#x4F9D;&#x8D56;&#x7684;&#x65B9;&#x5F0F;&#x96C6;&#x6210;&#x5230;&#x9879;&#x76EE;&#x4E2D;</p>
+<p>&#x53EA;&#x9700;&#x8981;&#x96C6;&#x6210;&#x5373;&#x53EF;&#xFF0C;<strong>&#x4E0D;&#x9700;&#x8981;&#x5173;&#x5FC3;&#x5B9E;&#x73B0;&#x548C;&#x521D;&#x59CB;&#x5316;&#x95EE;&#x9898;&#xFF0C;&#x7B26;&#x5408;&#x8FEA;&#x7C73;&#x7279;&#x539F;&#x5219;&#xFF08;&#x6700;&#x5C11;&#x77E5;&#x9053;&#xFF09;</strong></p>
+<p>&#x521D;&#x59CB;&#x5316;&#x7684;&#x65B9;&#x6CD5;&#x540C;&#x4E1A;&#x52A1;&#x7EC4;&#x4EF6;&#xFF0C;&#x4F7F;&#x7528;android-startup</p>
+<h2 id="&#x4E0A;&#x4F20;&#x81F3;maven">&#x4E0A;&#x4F20;&#x81F3;MAVEN</h2>
+<p><strong>Gradle7.0&#x4E4B;&#x540E;&#xFF0C;&#x4E0A;&#x4F20;maven&#x63D2;&#x4EF6;&#x4E5F;&#x8FDB;&#x884C;&#x4E86;&#x66F4;&#x65B0;&#xFF0C;maven plugin&#xFF0C;uploadArchives&#x5DF2;&#x65E0;&#x6CD5;&#x4F7F;&#x7528;</strong></p>
+<p>&#x4F7F;&#x7528;maven-publish plugin&#x63D2;&#x4EF6;&#x8FDB;&#x884C;&#x4E0A;&#x4F20;</p>
+<ol>
+<li><p>&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;push.gradle&#xFF0C;&#x5E94;&#x7528;maven-publish&#x63D2;&#x4EF6;&#x8FDB;&#x884C;&#x4E0A;&#x4F20;&#xFF0C;&#x5E76;&#x5B9A;&#x4E49;&#x7EC4;&#x4EF6;&#x5E93;versionName</p>
+<pre class="language-"><code class="lang-groovy"><span class="token comment">//&#x652F;&#x6301;&#x5C06;&#x9879;&#x76EE;&#x53D1;&#x5E03;&#x5230;maven&#x4ED3;&#x5E93;&#x7684;&#x63D2;&#x4EF6;</span>
+apply plugin<span class="token punctuation">:</span> <span class="token string">&apos;maven-publish&apos;</span>
+
+<span class="token comment">//def versionName = &quot;1.0.0&quot;</span>
+<span class="token keyword">def</span> versionName <span class="token operator">=</span> <span class="token string">&quot;1.0.0-SNAPSHOT&quot;</span> <span class="token comment">//&#x5FEB;&#x7167;&#x7248;&#x672C;</span>
+</code></pre>
+</li>
+<li><p>&#x5B9A;&#x4E49;maven&#x5E93;&#x7684;&#x5FEB;&#x7167;&#x548C;release&#x7684;URL</p>
+<pre class="language-"><code class="lang-groovy"><span class="token keyword">def</span> RELEASE_REPOSITORY_URL <span class="token operator">=</span> <span class="token string">&quot;http://xxx.xxx.xxx.xxx:xxxx/repository/maven-releases/&quot;</span>
+<span class="token keyword">def</span> SNAPSHOT_REPOSITORY_URL <span class="token operator">=</span> <span class="token string">&quot;http://xxx.xxx.xxx.xxx:xxxx/repository/maven-snapshots/&quot;</span>
+</code></pre>
+</li>
+<li><p>&#x7F16;&#x5199;&#x4E0A;&#x4F20;&#x65B9;&#x6CD5;&#xFF0C;afterEvaluate&#x4E3A;&#x5F53;&#x6784;&#x5EFA;&#x540E;&#x7684;&#x64CD;&#x4F5C;</p>
+<pre class="language-"><code class="lang-groovy">afterEvaluate <span class="token punctuation">{</span>
+ publishing <span class="token punctuation">{</span>
+     publications <span class="token punctuation">{</span>
+         <span class="token function">Production</span><span class="token punctuation">(</span>MavenPublication<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+             from components<span class="token punctuation">.</span>release
+             groupId <span class="token operator">=</span> <span class="token string">&quot;com.shuyilink&quot;</span>
+             artifactId <span class="token operator">=</span> <span class="token string">&quot;dfs-app-frame&quot;</span>
+             version <span class="token operator">=</span> versionName
+             <span class="token comment">// &#x4E0A;&#x4F20;source&#xFF0C;&#x8FD9;&#x6837;&#x4F7F;&#x7528;&#x653E;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x65B9;&#x6CD5;&#x6CE8;&#x91CA;</span>
+             <span class="token function">artifact</span><span class="token punctuation">(</span>sourcesJar<span class="token punctuation">)</span>
+             <span class="token function">artifact</span><span class="token punctuation">(</span>assetsJar<span class="token punctuation">)</span>
+         <span class="token punctuation">}</span>
+     <span class="token punctuation">}</span>
+     repositories <span class="token punctuation">{</span>
+         <span class="token comment">// &#x5B9A;&#x4E49;&#x4E00;&#x4E2A; maven &#x4ED3;&#x5E93;</span>
+         maven <span class="token punctuation">{</span>
+             <span class="token comment">// &#x53EF;&#x4EE5;&#x6709;&#x4E14;&#x4EC5;&#x6709;&#x4E00;&#x4E2A;&#x4ED3;&#x5E93;&#x4E0D;&#x6307;&#x5B9A; name &#x5C5E;&#x6027;&#xFF0C;&#x4F1A;&#x9690;&#x5F0F;&#x8BBE;&#x7F6E;&#x4E3A; maven</span>
+             <span class="token comment">// &#x6839;&#x636E; versionName &#x6765;&#x5224;&#x65AD;&#x4ED3;&#x5E93;&#x5730;&#x5740;</span>
+             url <span class="token operator">=</span> versionName<span class="token punctuation">.</span><span class="token function">endsWith</span><span class="token punctuation">(</span><span class="token string">&apos;SNAPSHOT&apos;</span><span class="token punctuation">)</span> <span class="token operator">?</span> SNAPSHOT_REPOSITORY_URL <span class="token punctuation">:</span> RELEASE_REPOSITORY_URL
+             <span class="token comment">// &#x4ED3;&#x5E93;&#x7528;&#x6237;&#x540D;&#x5BC6;&#x7801;</span>
+             credentials <span class="token punctuation">{</span>
+                 username <span class="token operator">=</span> <span class="token string">&quot;xxx&quot;</span>
+                 password <span class="token operator">=</span> <span class="token string">&quot;xxx&quot;</span>
+             <span class="token punctuation">}</span>
+             allowInsecureProtocol <span class="token boolean">true</span>
+         <span class="token punctuation">}</span>
+     <span class="token punctuation">}</span>
+ <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>&#x7F16;&#x5199;&#x4E0A;&#x4F20;&#x6E90;&#x7801;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;<strong>&#x8FD9;&#x6837;&#x5728;&#x4E1A;&#x52A1;&#x7EC4;&#x4EF6;&#x4E2D;&#x53EF;&#x4EE5;&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x57FA;&#x7840;&#x7EC4;&#x4EF6;&#x7684;&#x6E90;&#x7801;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x7F16;&#x8BD1;&#x540E;&#x7684;.class&#x6587;&#x4EF6;&#xFF0C;&#x65B9;&#x4FBF;&#x8C03;&#x8BD5;</strong></p>
+<pre class="language-"><code class="lang-groovy">task <span class="token function">sourcesJar</span><span class="token punctuation">(</span>type<span class="token punctuation">:</span> Jar<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+ <span class="token keyword">if</span> <span class="token punctuation">(</span>project<span class="token punctuation">.</span><span class="token function">hasProperty</span><span class="token punctuation">(</span><span class="token string">&quot;kotlin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     from android<span class="token punctuation">.</span>sourceSets<span class="token punctuation">.</span>main<span class="token punctuation">.</span>java<span class="token punctuation">.</span><span class="token function">getSrcDirs</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+ <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>project<span class="token punctuation">.</span><span class="token function">hasProperty</span><span class="token punctuation">(</span><span class="token string">&quot;android&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     from android<span class="token punctuation">.</span>sourceSets<span class="token punctuation">.</span>main<span class="token punctuation">.</span>java<span class="token punctuation">.</span>sourceFiles
+ <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+     println project
+     from sourceSets<span class="token punctuation">.</span>main<span class="token punctuation">.</span>allSource
+ <span class="token punctuation">}</span>
+ classifier <span class="token operator">=</span> <span class="token string">&apos;sources&apos;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>&#x5F53;assets&#x4E2D;&#x6709;&#x8D44;&#x6E90;&#x65F6;&#xFF0C;&#x9700;&#x7F16;&#x5199;&#x4E0A;&#x4F20;assets&#x7684;&#x65B9;&#x6CD5;</p>
+<pre class="language-"><code class="lang-groovy">task <span class="token function">assetsJar</span><span class="token punctuation">(</span>type<span class="token punctuation">:</span>Jar<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+ classifier <span class="token operator">=</span> <span class="token string">&quot;assets&quot;</span>
+ android<span class="token punctuation">.</span>sourceSets<span class="token punctuation">.</span>all <span class="token punctuation">{</span> sourceSet <span class="token operator">-&gt;</span>
+     from sourceSet<span class="token punctuation">.</span>assets<span class="token punctuation">.</span>srcDirs
+ <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>&#x5F53;&#x5305;&#x4E2D;&#x6709;aar&#x6216;jar&#x5305;&#x4F9D;&#x8D56;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x628A;&#x8FD9;&#x4E24;&#x4E2A;&#x672C;&#x5730;&#x5305;&#x4E00;&#x8D77;&#x6253;&#x5305;&#xFF0C;&#x8FD9;&#x8FB9;&#x4F7F;&#x7528;<strong><a href="https://github.com/kezong/fat-aar-android" target="_blank"> fat-aar-android</a></strong> &#x8FD9;&#x4E2A;gradle&#x63D2;&#x4EF6;&#x53EF;&#x5E2E;&#x6211;&#x4EEC;&#x5C06;aar&#x548C;jar&#x5305;&#x6253;&#x5305;&#x8FDB;&#x81EA;&#x5DF1;&#x7684;aar&#x5305;&#x4E2D;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x7684;build.gradle&#x4E2D;&#x4F9D;&#x8D56;fat-aar&#x63D2;&#x4EF6;</p>
+<pre class="language-"><code>dependencies {
+ classpath &apos;com.github.kezong:fat-aar:1.3.6&apos;
+}
+</code></pre><p> &#x5728;&#x7EC4;&#x4EF6;&#x7684;build.gradle&#x4E2D;&#x5E94;&#x7528;&#x63D2;&#x4EF6;&#xFF0C;&#x5E76;&#x5C06;&#x9700;&#x8981;&#x6253;&#x5305;&#x7684;aar&#x6216;jar&#x5305;&#x4F7F;&#x7528;embed&#x66FF;&#x4EE3;implementation</p>
+<pre class="language-"><code>apply plugin: &apos;com.kezong.fat-aar&apos;
+
+dependencies {
+   implementation fileTree(dir: &apos;libs&apos;, include: [&apos;*.jar&apos;])
+
+   embed(name: &apos;DataCollection&apos;, ext: &apos;aar&apos;)
+   embed(name: &apos;printer_release_v1.0_3&apos;, ext: &apos;aar&apos;)
+
+}
+</code></pre></li>
+<li><p>&#x7ECF;&#x8FC7;&#x4E0A;&#x8FF0;&#x7684;&#x914D;&#x7F6E;&#x540E;&#xFF0C;&#x5728;AndroidStudio&#x53F3;&#x4FA7;&#x7684;Gradle&#x914D;&#x7F6E;&#x4E2D;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;publishing&#x7684;&#x4EFB;&#x52A1;&#x7EC4;&#xFF0C;&#x70B9;&#x51FB;publish&#x5373;&#x53EF;&#x4E0A;&#x4F20;&#x81F3;maven&#xFF0C;&#x70B9;&#x51FB;publishToMavenLocal&#x5373;&#x53EF;&#x4E0A;&#x4F20;&#x5230;&#x672C;&#x5730;maven&#x4ED3;&#x5E93;</p>
+<p><img src="&#x57FA;&#x7840;&#x7EC4;&#x4EF6;.assets/image-20211029173520891.png" alt="image-20211029173520891"></p>
+</li>
+<li><p>&#x6BCF;&#x4E2A;&#x9879;&#x76EE;&#x90FD;&#x6709;&#x4F9D;&#x8D56;&#x4ED3;&#x5E93;&#xFF0C;DFS&#x4F7F;&#x7528;&#x516C;&#x53F8;&#x7684;maven&#x4ED3;&#x5E93;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x5728;Repositories&#x4E2D;&#x52A0;&#x5165;&#x516C;&#x53F8;maven&#x4ED3;&#x5E93;&#x7684;&#x5730;&#x5740;</p>
+</li>
+<li><p>&#x7531;&#x4E8E;DFS&#x4F7F;&#x7528;&#x7684;&#x662F;&#x5FEB;&#x7167;&#x7248;&#x672C;&#xFF0C;gradle&#x5BF9;SNAPSHOT&#x7248;&#x672C;&#x5B58;&#x5728;&#x7F13;&#x5B58;&#xFF0C;&#x4F1A;&#x5BFC;&#x81F4;&#x62C9;&#x53D6;&#x5FEB;&#x7167;&#x4F9D;&#x8D56;&#x7684;&#x65F6;&#x5019;&#x5E76;&#x4E0D;&#x662F;maven&#x4E0A;&#x6700;&#x65B0;&#x7684;&#x7248;&#x672C;&#xFF0C;</p>
+<p> &#x9700;&#x8981;&#x5728;&#x6BCF;&#x4E2A;&#x4E1A;&#x52A1;&#x6A21;&#x5757;&#x7684;build.gradle&#x4E2D;&#x52A0;&#x5165;&#x914D;&#x7F6E;&#xFF1A;</p>
+<pre class="language-"><code class="lang-groovy"><span class="token comment">//&#x5FEB;&#x7167;&#x7248;&#x672C;&#x6C38;&#x8FDC;&#x68C0;&#x67E5;&#x6700;&#x65B0;</span>
+project<span class="token punctuation">.</span>configurations<span class="token punctuation">.</span>all <span class="token punctuation">{</span>
+ resolutionStrategy<span class="token punctuation">.</span>cacheChangingModulesFor <span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">&apos;seconds&apos;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>&#x7ECF;&#x8FC7;&#x4E0A;&#x8FF0;&#x64CD;&#x4F5C;&#x540E;&#xFF0C;&#x6700;&#x7EC8;&#x6211;&#x4EEC;&#x4F9D;&#x8D56;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code>dependencies {
+implementation com.shuyilink:dfs-app-frame:1.0.0-SNAPSHOT
+}
+</code></pre></li>
+</ol>
+<p><strong>&#x5982;&#x6B64;&#x914D;&#x7F6E;&#x540E;&#xFF0C;&#x66F4;&#x6539;&#x4E86;&#x57FA;&#x7840;&#x7EC4;&#x4EF6;&#x53EA;&#x9700;&#x8981;&#x70B9;&#x51FB;publish&#x4E0A;&#x4F20;&#x5230;maven&#xFF0C;&#x7136;&#x540E;&#x5728;&#x4E1A;&#x52A1;&#x7EC4;&#x4EF6;&#x4E2D;sync project&#x62C9;&#x53D6;&#x5FEB;&#x7167;&#x7248;&#x672C;&#x5373;&#x53EF;&#xFF0C;&#x65E0;&#x9700;&#x5173;&#x5FC3;&#x5FEB;&#x7167;&#x7684;&#x5177;&#x4F53;&#x7248;&#x672C;</strong></p>
+<h2 id="buildgradle&#x7BA1;&#x7406;&#x63D2;&#x4EF6;">build.gradle&#x7BA1;&#x7406;&#x63D2;&#x4EF6;</h2>
+<h3 id="&#x95EE;&#x9898;">&#x95EE;&#x9898;</h3>
+<p><strong>&#x5F53;&#x6A21;&#x5757;&#x589E;&#x591A;&#x65F6;&#xFF0C;&#x6BCF;&#x4E2A;&#x6A21;&#x5757;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684;build.config&#x914D;&#x7F6E;&#xFF0C;&#x96BE;&#x4EE5;&#x7BA1;&#x7406;</strong>&#x3002;</p>
+<p>&#x672C;&#x5730;&#x6A21;&#x5757;&#x53EF;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x7F16;&#x5199;&#x4E00;&#x4E2A;version.gradle&#x6765;&#x7EDF;&#x4E00;&#x7BA1;&#x7406;&#x4F9D;&#x8D56;&#x7B49;&#x4FE1;&#x606F;&#xFF0C;&#x5E76;&#x5728;&#x6A21;&#x5757;&#x7684;build.gradle&#x4E2D;</p>
+<pre class="language-"><code class="lang-groovy">apply from<span class="token punctuation">:</span> <span class="token string">&apos;../version.gradle&apos;</span>
+</code></pre>
+<p>&#x8FD9;&#x6837;&#x6BCF;&#x4E2A;&#x672C;&#x5730;&#x6A21;&#x5757;&#x90FD;&#x80FD;&#x5171;&#x7528;version.gradle&#x4E2D;&#x7684;&#x914D;&#x7F6E;&#x3002;</p>
+<p><strong>&#x4F46;&#x4E0A;&#x8FF0;&#x65B9;&#x6848;&#x53EA;&#x9002;&#x7528;&#x4E8E;&#x672C;&#x5730;&#x6A21;&#x5757;&#xFF0C;&#x7531;&#x4E8E;&#x4E91;&#x7AEF;&#x6A21;&#x5757;&#x5404;&#x81EA;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#x9879;&#x76EE;&#xFF0C;&#x6240;&#x4EE5;&#x672C;&#x5730;&#x7684;version.gradle&#x5BF9;&#x4E91;&#x7AEF;&#x6A21;&#x5757;&#x5C31;&#x4E0D;&#x9002;&#x7528;&#x4E86;</strong></p>
+<p>DFS&#x7F16;&#x5199;&#x4E86;&#x4E00;&#x4E2A;&#x7BA1;&#x7406;build&#x7684;gradle&#x63D2;&#x4EF6;&#x5E76;&#x4E0A;&#x4F20;&#x5230;maven&#x4ED3;&#x5E93;&#xFF0C;&#x4F7F;&#x5F97;&#x6240;&#x6709;&#x6A21;&#x5757;&#x53EF;&#x4F7F;&#x7528;</p>
+<h3 id="&#x5B9E;&#x73B0;">&#x5B9E;&#x73B0;</h3>
+<h4 id="&#x65B0;&#x5EFA;&#x63D2;&#x4EF6;">&#x65B0;&#x5EFA;&#x63D2;&#x4EF6;</h4>
+<ol>
+<li><p>&#x5728;Android Studio&#x4E2D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#xFF0C;&#x5E76;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;module&#xFF0C;module&#x7C7B;&#x578B;&#x9009;&#x62E9; Java or Kotlin Library&#xFF0C;&#x5E76;&#x586B;&#x5199;&#x76F8;&#x5173;&#x4FE1;&#x606F;</p>
+<p><img src="&#x57FA;&#x7840;&#x7EC4;&#x4EF6;.assets/image-20211103162740664.png" alt="image-20211103162740664"></p>
+</li>
+<li><p>&#x65B0;&#x5EFA;&#x5B8C;module&#x540E;&#xFF0C;&#x5728;src/main&#x4E0B;&#x65B0;&#x5EFA;groovy&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x5728;groovy&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x65B0;&#x5EFA;&#x5305;&#x540D;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x5728;src/main&#x4E0B;&#x65B0;&#x5EFA;resources&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x5E76;&#x5728;&#x5176;&#x4E0B;&#x65B0;&#x5EFA;META-INF&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x518D;&#x65B0;&#x5EFA;gradle-plugins&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x6700;&#x7EC8;&#x521B;&#x5EFA;&#x6587;&#x4EF6;&#xFF0C;&#x5305;&#x540D;.properties&#xFF0C;&#x5305;&#x540D;&#x5FC5;&#x987B;&#x4E0E;&#x4E0A;&#x9762;&#x7684;groovy&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x7684;&#x5305;&#x540D;&#x4E00;&#x81F4;&#xFF0C;&#x5982;&#x56FE;&#xFF1A;</p>
+<p><img src="&#x57FA;&#x7840;&#x7EC4;&#x4EF6;.assets/image-20211103163117596.png" alt="image-20211103163117596"></p>
+</li>
+<li><p>&#x5728;module&#x7684;build.gradle&#x6587;&#x4EF6;&#x4E2D;apply  groovy&#x63D2;&#x4EF6;&#x548C;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x7F16;&#x5199;&#x7684;&#x4E0A;&#x4F20;&#x81F3;maven&#x7684;push.gradle&#x63D2;&#x4EF6;&#xFF0C;&#x5E76;&#x4F9D;&#x8D56;gradleApi()&#x548C;localGroovy()</p>
+<pre class="language-"><code class="lang-groovy">plugins <span class="token punctuation">{</span>
+    id <span class="token string">&apos;groovy&apos;</span>
+<span class="token punctuation">}</span>
+
+apply from<span class="token punctuation">:</span> <span class="token string">&apos;../push.gradle&apos;</span>
+
+dependencies <span class="token punctuation">{</span>
+    implementation <span class="token function">gradleApi</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    implementation <span class="token function">localGroovy</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>&#x5728;&#x5305;&#x540D;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x65B0;&#x5EFA;XXXConrtoller.groovy&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x5B9E;&#x73B0;<code>Plugin<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Project</span><span class="token punctuation">&gt;</span></span></code>&#xFF0C;&#x5F53;&#x9879;&#x76EE;apply&#x4E86;&#x672C;&#x63D2;&#x4EF6;&#x5E76;&#x6267;&#x884C;sync project&#x65F6;&#xFF0C;&#x5C31;&#x4F1A;&#x81EA;&#x52A8;&#x6267;&#x884C;apply&#x4E2D;&#x7684;&#x903B;&#x8F91;</p>
+<pre class="language-"><code class="lang-groovy"><span class="token keyword">class</span> <span class="token class-name">DependenciesVersionController</span> <span class="token keyword">implements</span> <span class="token class-name">Plugin</span><span class="token operator">&lt;</span>Project<span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">void</span> <span class="token function">apply</span><span class="token punctuation">(</span>Project project<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment">//TODO </span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>&#x5728;&#x5305;&#x540D;.properties&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x7533;&#x660E;&#x63D2;&#x4EF6;&#x7684;Controller</p>
+<pre class="language-"><code class="lang-properties"><span class="token attr-name">implementation-class</span><span class="token punctuation">=</span><span class="token attr-value">com.sylink.dfs.app.version.plugin.DependenciesVersionController</span>
+</code></pre>
+</li>
+<li><p>&#x81F3;&#x6B64;&#x524D;&#x671F;&#x51C6;&#x5907;&#x5DE5;&#x4F5C;&#x5168;&#x90E8;&#x7ED3;&#x675F;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x5C31;&#x662F;&#x63D2;&#x4EF6;&#x903B;&#x8F91;&#x7684;&#x7F16;&#x5199;</p>
+</li>
+</ol>
+<h4 id="plugin&#x7EDF;&#x4E00;&#x5B9A;&#x4E49;">plugin&#x7EDF;&#x4E00;&#x5B9A;&#x4E49;</h4>
+<ol>
+<li><p>DFS&#x4F7F;&#x7528;java&#x548C;groovy&#x7F16;&#x5199;gradle&#x63D2;&#x4EF6;&#x3002;&#x4F8B;&#x5982;&#x5728; <strong>&#x4E1A;&#x52A1;&#x7EC4;&#x4EF6;&#x7684;build.gradle&#x7BC7;&#x4E2D;</strong>&#x6240;&#x5199;&#x5230;&#x7684;&#x52A8;&#x6001;&#x5207;&#x6362; application &#x548C; libray &#x5728;&#x63D2;&#x4EF6;&#x4E2D;&#x5B9E;&#x73B0;&#x65F6;&#xFF0C;&#x65B0;&#x5EFA;AppPlugins.groovy&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre class="language-"><code class="lang-groovy"><span class="token keyword">class</span> <span class="token class-name">AppPlugins</span> <span class="token punctuation">{</span>
+    <span class="token keyword">static</span> <span class="token keyword">def</span> <span class="token function">addPlugins</span><span class="token punctuation">(</span>Project project<span class="token punctuation">,</span> SylinkProperties sylinkProperties<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>project<span class="token punctuation">.</span>name <span class="token operator">==</span> <span class="token string">&apos;app&apos;</span>
+                <span class="token operator">||</span> <span class="token punctuation">(</span><span class="token operator">!</span>sylinkProperties<span class="token punctuation">.</span><span class="token function">getSYLINK_IS_JENKINS</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token operator">&amp;&amp;</span> sylinkProperties<span class="token punctuation">.</span><span class="token function">getSYLINK_IS_BUILD_MODULE</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token operator">&amp;&amp;</span> project<span class="token punctuation">.</span>name<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span><span class="token string">&apos;app&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            project<span class="token punctuation">.</span>plugins<span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span><span class="token string">&apos;com.android.application&apos;</span><span class="token punctuation">)</span>
+            project<span class="token punctuation">.</span>plugins<span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span><span class="token string">&apos;com.didi.drouter&apos;</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            project<span class="token punctuation">.</span>plugins<span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span><span class="token string">&apos;com.android.library&apos;</span><span class="token punctuation">)</span>
+
+        <span class="token punctuation">}</span>
+        project<span class="token punctuation">.</span>plugins<span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span><span class="token string">&apos;kotlin-android&apos;</span><span class="token punctuation">)</span>
+        project<span class="token punctuation">.</span>plugins<span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span><span class="token string">&apos;kotlin-kapt&apos;</span><span class="token punctuation">)</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>&#x5728;XXXController&#x7684;apply&#x65B9;&#x6CD5;&#x4E2D;&#x8C03;&#x7528;addPlugins&#x65B9;&#x6CD5;</p>
+<pre class="language-"><code class="lang-groovy"><span class="token keyword">class</span> <span class="token class-name">DependenciesVersionController</span> <span class="token keyword">implements</span> <span class="token class-name">Plugin</span><span class="token operator">&lt;</span>Project<span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">void</span> <span class="token function">apply</span><span class="token punctuation">(</span>Project project<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        SylinkProperties properties <span class="token operator">=</span> PropertiesUtils<span class="token punctuation">.</span><span class="token function">readProperties</span><span class="token punctuation">(</span>project<span class="token punctuation">)</span>
+
+        AppPlugins<span class="token punctuation">.</span><span class="token function">addPlugins</span><span class="token punctuation">(</span>project<span class="token punctuation">,</span> properties<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+</ol>
+<h4 id="build&#x914D;&#x7F6E;&#x7EDF;&#x4E00;&#x7BA1;&#x7406;">build&#x914D;&#x7F6E;&#x7EDF;&#x4E00;&#x7BA1;&#x7406;</h4>
+<ol>
+<li><p>&#x5B9A;&#x4E49;AppInfoExt.java&#xFF0C;&#x5199;&#x5165;android&#x7248;&#x672C;&#x5E38;&#x91CF;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">AppInfoExt</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> min_sdk <span class="token operator">=</span> <span class="token number">24</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> target_sdk <span class="token operator">=</span> <span class="token number">30</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> compile_sdk <span class="token operator">=</span> <span class="token number">30</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token class-name">String</span> build_tools <span class="token operator">=</span> <span class="token string">&quot;30.0.2&quot;</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>&#x65B0;&#x5EFA;AppConfig.groovy&#xFF0C;&#x5E76;&#x5B9A;&#x4E49;addConfig&#x65B9;&#x6CD5;&#xFF0C;&#x5728;addConfig&#x65B9;&#x6CD5;&#x4E2D;&#x52A0;&#x5165;&#x901A;&#x7528;&#x914D;&#x7F6E;</p>
+<pre class="language-"><code class="lang-groovy"><span class="token keyword">class</span> <span class="token class-name">AppConfig</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">static</span> <span class="token keyword">def</span> <span class="token function">addConfig</span><span class="token punctuation">(</span>Project project<span class="token punctuation">,</span> SylinkProperties sylinkProperties<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        <span class="token keyword">def</span> abiFiltersX86 <span class="token operator">=</span> sylinkProperties<span class="token punctuation">.</span>SYLINK_IS_DEBUG <span class="token operator">?</span> <span class="token string">&quot;x86&quot;</span> <span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span>
+        project<span class="token punctuation">.</span>kapt <span class="token punctuation">{</span>
+            useBuildCache <span class="token operator">=</span> <span class="token boolean">true</span>
+            javacOptions <span class="token punctuation">{</span>
+                <span class="token function">option</span><span class="token punctuation">(</span><span class="token string">&quot;-Xmaxerrs&quot;</span><span class="token punctuation">,</span> <span class="token number">500</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">//&#x6240;&#x6709;&#x6A21;&#x5757;&#x901A;&#x7528;&#x90E8;&#x5206;</span>
+        project<span class="token punctuation">.</span>android <span class="token punctuation">{</span>
+
+            compileSdkVersion AppInfoExt<span class="token punctuation">.</span>compile_sdk
+            buildToolsVersion AppInfoExt<span class="token punctuation">.</span>build_tools
+
+            defaultConfig <span class="token punctuation">{</span>
+                minSdkVersion AppInfoExt<span class="token punctuation">.</span>min_sdk
+                targetSdkVersion AppInfoExt<span class="token punctuation">.</span>target_sdk
+                versionCode sylinkProperties<span class="token punctuation">.</span>SYLINK_VERSION_CODE
+                versionName sylinkProperties<span class="token punctuation">.</span>SYLINK_VERSION_NAME
+                multiDexEnabled <span class="token boolean">true</span>
+
+                ndk <span class="token punctuation">{</span>
+                    <span class="token comment">//&#x6307;&#x5B9A;&#x9700;&#x8981;&#x7684;os&#x5E73;&#x53F0;</span>
+                    abiFilters <span class="token string">&apos;armeabi-v7a&apos;</span><span class="token punctuation">,</span> abiFiltersX86
+                <span class="token punctuation">}</span>
+
+            <span class="token punctuation">}</span>
+
+            sourceSets <span class="token punctuation">{</span>
+                main <span class="token punctuation">{</span> jniLibs<span class="token punctuation">.</span>srcDirs <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&apos;libs&apos;</span><span class="token punctuation">]</span> <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+
+            lintOptions <span class="token punctuation">{</span>
+                lintConfig project<span class="token punctuation">.</span><span class="token function">file</span><span class="token punctuation">(</span><span class="token string">&apos;lint.xml&apos;</span><span class="token punctuation">)</span> <span class="token comment">//&#x5FFD;&#x7565;&#x68C0;&#x67E5;</span>
+                abortOnError <span class="token boolean">false</span>
+            <span class="token punctuation">}</span>
+
+            compileOptions <span class="token punctuation">{</span>
+                sourceCompatibility JavaVersion<span class="token punctuation">.</span>VERSION_11
+                targetCompatibility JavaVersion<span class="token punctuation">.</span>VERSION_11
+            <span class="token punctuation">}</span>
+
+            kotlinOptions <span class="token punctuation">{</span>
+                jvmTarget <span class="token operator">=</span> JavaVersion<span class="token punctuation">.</span>VERSION_11<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>&#x5728;addConfig&#x4E2D;&#x52A0;&#x5165;application&#x6A21;&#x5757;&#x7684;&#x914D;&#x7F6E;&#xFF0C; <strong>&#x5728;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4E2D;&#x53EF;&#x968F;&#x610F;&#x52A0;&#x5165;/&#x62FC;&#x63A5;&#x6240;&#x9700;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x5305;&#x62EC;&#x5404;&#x79CD;&#x6E20;&#x9053;&#x914D;&#x7F6E;&#xFF0C;&#x65B9;&#x4FBF;&#x7EDF;&#x4E00;&#x7BA1;&#x7406;</strong></p>
+<pre class="language-"><code class="lang-groovy"><span class="token comment">//&#x5982;&#x679C;&#x662F;application&#x6A21;&#x5757;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>project<span class="token punctuation">.</span>plugins<span class="token punctuation">.</span><span class="token function">hasPlugin</span><span class="token punctuation">(</span><span class="token string">&apos;com.android.application&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    project<span class="token punctuation">.</span>android <span class="token punctuation">{</span>
+
+        signingConfigs <span class="token punctuation">{</span>
+            release <span class="token punctuation">{</span>
+                storeFile project<span class="token punctuation">.</span><span class="token function">file</span><span class="token punctuation">(</span>sylinkProperties<span class="token punctuation">.</span>SYLINK_KEY_STORE<span class="token punctuation">)</span>
+                storePassword sylinkProperties<span class="token punctuation">.</span>SYLINK_KEY_STORE_PWD
+                keyAlias sylinkProperties<span class="token punctuation">.</span>SYLINK_KEY_ALIAS
+                keyPassword sylinkProperties<span class="token punctuation">.</span>SYLINK_KEY_ALIAS_PWD
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+
+        buildTypes <span class="token punctuation">{</span>
+            debug <span class="token punctuation">{</span>
+                matchingFallbacks <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&apos;release&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;debug&apos;</span><span class="token punctuation">]</span>
+                proguardFiles <span class="token function">getDefaultProguardFile</span><span class="token punctuation">(</span><span class="token string">&apos;proguard-android.txt&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&apos;proguard-rules.pro&apos;</span>
+                signingConfig signingConfigs<span class="token punctuation">.</span>release
+                minifyEnabled <span class="token boolean">false</span>
+                ext<span class="token punctuation">.</span>enableCrashlytics <span class="token operator">=</span> <span class="token boolean">false</span>
+                ext<span class="token punctuation">.</span>alwaysUpdateBuildId <span class="token operator">=</span> <span class="token boolean">false</span>
+
+            <span class="token punctuation">}</span>
+            release <span class="token punctuation">{</span>
+                matchingFallbacks <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&apos;release&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;debug&apos;</span><span class="token punctuation">]</span>
+                minifyEnabled <span class="token boolean">true</span>
+                shrinkResources <span class="token boolean">true</span>
+                proguardFiles <span class="token function">getDefaultProguardFile</span><span class="token punctuation">(</span><span class="token string">&apos;proguard-android.txt&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&apos;proguard-rules.pro&apos;</span>
+                signingConfig signingConfigs<span class="token punctuation">.</span>release
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">//&#x5F00;&#x53D1;&#x7528; MMdd  &#x6253;&#x5305;&#x63D0;&#x6D4B; MMddHH &#x56E0;&#x4E3A;&#x7CBE;&#x786E;&#x5230;&#x5C0F;&#x65F6; &#x8DE8;&#x5C0F;&#x65F6;&#x5C31;&#x4E0D;&#x80FD;&#x81EA;&#x52A8;&#x5B89;&#x88C5;apk</span>
+        <span class="token keyword">def</span> timeForDebugFileFormater <span class="token operator">=</span> <span class="token string">&quot;MMdd&quot;</span>
+        <span class="token keyword">def</span> timeForReleaseFileFormater <span class="token operator">=</span> <span class="token string">&quot;MMddHH&quot;</span>
+
+        flavorDimensions <span class="token string">&apos;app&apos;</span>
+
+        applicationVariants<span class="token punctuation">.</span>all <span class="token punctuation">{</span> variant <span class="token operator">-&gt;</span>
+            variant<span class="token punctuation">.</span>outputs<span class="token punctuation">.</span>all <span class="token punctuation">{</span>
+
+                <span class="token keyword">def</span> buildTypeName <span class="token operator">=</span> variant<span class="token punctuation">.</span>buildType<span class="token punctuation">.</span>name
+
+                <span class="token keyword">def</span> timeFormater
+                <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token string">&quot;debug&quot;</span><span class="token punctuation">.</span><span class="token function">equalsIgnoreCase</span><span class="token punctuation">(</span>buildTypeName<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    timeFormater <span class="token operator">=</span> timeForDebugFileFormater
+                <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                    timeFormater <span class="token operator">=</span> timeForReleaseFileFormater
+                <span class="token punctuation">}</span>
+                outputFileName <span class="token operator">=</span> <span class="token string">&quot;${AppInfoUtils.getApkName(sylinkProperties)}&quot;</span> <span class="token operator">+</span>
+                        <span class="token string">&quot;_${sylinkProperties.SYLINK_SERVER}_${buildTypeName}&quot;</span> <span class="token operator">+</span>
+                        <span class="token string">&quot;_V${sylinkProperties.SYLINK_VERSION_NAME}&quot;</span> <span class="token operator">+</span>
+                        <span class="token string">&quot;_${AppInfoUtils.releaseTime(timeFormater)}.apk&quot;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//&#x5982;&#x679C;&#x662F;&#x4E1A;&#x52A1;&#x7684;&#x6A21;&#x5757;(&#x6709;ApplicationID)</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>sylinkProperties<span class="token punctuation">.</span>SYLINK_APPLICATION_ID<span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token operator">||</span> project<span class="token punctuation">.</span>name <span class="token operator">==</span> <span class="token string">&quot;lib.frame&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    project<span class="token punctuation">.</span>android <span class="token punctuation">{</span>
+        viewBinding <span class="token punctuation">{</span>
+            enabled <span class="token operator">=</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span>
+
+        dataBinding <span class="token punctuation">{</span>
+            enabled <span class="token operator">=</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>&#x6700;&#x540E;&#x5728;XXXController&#x7684;apply&#x65B9;&#x6CD5;&#x4E2D;&#x8C03;&#x7528;addConfig&#x65B9;&#x6CD5;</p>
+<pre class="language-"><code class="lang-groovy"><span class="token keyword">class</span> <span class="token class-name">DependenciesVersionController</span> <span class="token keyword">implements</span> <span class="token class-name">Plugin</span><span class="token operator">&lt;</span>Project<span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">void</span> <span class="token function">apply</span><span class="token punctuation">(</span>Project project<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        SylinkProperties properties <span class="token operator">=</span> PropertiesUtils<span class="token punctuation">.</span><span class="token function">readProperties</span><span class="token punctuation">(</span>project<span class="token punctuation">)</span>
+        println properties
+
+        AppPlugins<span class="token punctuation">.</span><span class="token function">addPlugins</span><span class="token punctuation">(</span>project<span class="token punctuation">,</span> properties<span class="token punctuation">)</span>
+        AppConfig<span class="token punctuation">.</span><span class="token function">addConfig</span><span class="token punctuation">(</span>project<span class="token punctuation">,</span> properties<span class="token punctuation">)</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+</ol>
+<h4 id="isdebug">IS_DEBUG</h4>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;gradle&#x7684;task&#x4EFB;&#x52A1;&#x6765;&#x5224;&#x65AD;&#x5F53;&#x524D;&#x8FD0;&#x884C;&#x7684;&#x662F;debug&#x8FD8;&#x662F;release&#x6A21;&#x5F0F;</p>
+<pre class="language-"><code class="lang-groovy">  <span class="token keyword">static</span> <span class="token keyword">boolean</span> <span class="token function">isReleaseBuildType</span><span class="token punctuation">(</span>Gradle gradle<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">for</span> <span class="token punctuation">(</span>String s <span class="token punctuation">:</span> gradle<span class="token punctuation">.</span><span class="token function">getStartParameter</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getTaskNames</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>s<span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span><span class="token string">&quot;release&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">return</span> <span class="token boolean">true</span>
+          <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">return</span> <span class="token boolean">false</span>
+  <span class="token punctuation">}</span>
+</code></pre>
+<h4 id="maven&#x4ED3;&#x5E93;&#x7EDF;&#x4E00;&#x914D;&#x7F6E;">maven&#x4ED3;&#x5E93;&#x7EDF;&#x4E00;&#x914D;&#x7F6E;</h4>
+<p>maven&#x7684;&#x914D;&#x7F6E;&#x4E5F;&#x53EF;&#x5728;&#x63D2;&#x4EF6;&#x4E2D;&#x7EDF;&#x4E00;&#x8BBE;&#x7F6E;</p>
+<ol>
+<li><p>&#x65B0;&#x5EFA;Repos.groovy&#xFF0C;&#x5B9A;&#x4E49;addRepos&#x65B9;&#x6CD5;</p>
+<pre class="language-"><code class="lang-groovy"><span class="token keyword">class</span> <span class="token class-name">Repos</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">static</span> <span class="token keyword">def</span> <span class="token function">addRepos</span><span class="token punctuation">(</span>Project project<span class="token punctuation">,</span> SylinkProperties sylinkProperties<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        Boolean USE_LOCAL_MAVEN <span class="token operator">=</span> sylinkProperties<span class="token punctuation">.</span><span class="token function">getSYLINK_USE_LOCAL_MAVEN</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        Boolean isRelease <span class="token operator">=</span> <span class="token operator">!</span>sylinkProperties<span class="token punctuation">.</span><span class="token function">getSYLINK_IS_DEBUG</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">def</span> handler <span class="token operator">=</span> project<span class="token punctuation">.</span><span class="token function">getRepositories</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        <span class="token comment">//&#x5982;&#x679C;&#x914D;&#x7F6E;&#x4F7F;&#x7528;&#x672C;&#x5730;Maven&#x8D44;&#x6E90;&#x4E14;&#x4E0D;&#x662F;&#x6253;Release&#x5305;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>USE_LOCAL_MAVEN <span class="token operator">!=</span> null
+                <span class="token operator">&amp;&amp;</span> USE_LOCAL_MAVEN
+                <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>isRelease<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            println <span class="token string">&quot;&#x4F7F;&#x7528;&#x672C;&#x5730;Maven&quot;</span>
+            handler<span class="token punctuation">.</span><span class="token function">mavenLocal</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+        handler<span class="token punctuation">.</span><span class="token function">google</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        handler<span class="token punctuation">.</span><span class="token function">mavenCentral</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        handler<span class="token punctuation">.</span>maven <span class="token punctuation">{</span> url <span class="token string">&apos;https://jitpack.io&apos;</span> <span class="token punctuation">}</span>
+        handler<span class="token punctuation">.</span>maven <span class="token punctuation">{</span>
+            url <span class="token string">&apos;http://193.169.200.250:8081/repository/maven-public/&apos;</span>
+            allowInsecureProtocol <span class="token operator">=</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span>
+        handler<span class="token punctuation">.</span>maven <span class="token punctuation">{</span> url <span class="token string">&apos;https://oss.sonatype.org/content/repositories/snapshots&apos;</span> <span class="token punctuation">}</span>
+        handler<span class="token punctuation">.</span>maven <span class="token punctuation">{</span> url <span class="token string">&quot;https://maven.aliyun.com/nexus/content/groups/public/&quot;</span> <span class="token punctuation">}</span>
+        handler<span class="token punctuation">.</span>maven <span class="token punctuation">{</span> url <span class="token string">&quot;https://maven.aliyun.com/nexus/content/repositories/releases&quot;</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x5176;&#x4E2D;&#x7684;&#x4F7F;&#x7528;&#x672C;&#x5730;Maven&#x5BF9;&#x5E94;<strong>&#x4E0A;&#x4F20;&#x81F3;Maven</strong>&#x7BC7;&#x7684;publishToMavenLocal&#x9009;&#x9879;&#xFF0C;&#x5C06;&#x7EC4;&#x4EF6;&#x53D1;&#x5E03;&#x5230;&#x672C;&#x5730;maven&#xFF0C;&#x8FD9;&#x5728;&#x4E91;&#x7AEF;&#x7EC4;&#x4EF6;&#x7684;&#x8C03;&#x8BD5;&#x9636;&#x6BB5;&#x975E;&#x5E38;&#x6709;&#x7528;&#x3002;</p>
+</li>
+<li><p>&#x5728;XXXController&#x7684;apply&#x65B9;&#x6CD5;&#x4E2D;&#x8C03;&#x7528;addRepos&#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x4E14;&#x5728;<strong>&#x4E0A;&#x4F20;&#x81F3;Maven</strong>&#x7BC7;&#x4E2D;&#x83B7;&#x5F97;&#x6700;&#x65B0;&#x5FEB;&#x7167;&#x7248;&#x672C;&#x7684;&#x914D;&#x7F6E;&#x4E5F;&#x53EF;&#x7EDF;&#x4E00;&#x5199;&#x5165;&#x8FD9;&#x91CC;</p>
+<pre class="language-"><code class="lang-groovy"><span class="token keyword">class</span> <span class="token class-name">DependenciesVersionController</span> <span class="token keyword">implements</span> <span class="token class-name">Plugin</span><span class="token operator">&lt;</span>Project<span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">void</span> <span class="token function">apply</span><span class="token punctuation">(</span>Project project<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        SylinkProperties properties <span class="token operator">=</span> PropertiesUtils<span class="token punctuation">.</span><span class="token function">readProperties</span><span class="token punctuation">(</span>project<span class="token punctuation">)</span>
+        println properties
+
+        Repos<span class="token punctuation">.</span><span class="token function">addRepos</span><span class="token punctuation">(</span>project<span class="token punctuation">,</span> properties<span class="token punctuation">)</span>
+
+        <span class="token comment">//&#x5FEB;&#x7167;&#x7248;&#x672C;&#x6C38;&#x8FDC;&#x68C0;&#x67E5;&#x6700;&#x65B0;</span>
+        project<span class="token punctuation">.</span>configurations<span class="token punctuation">.</span>all <span class="token punctuation">{</span>
+            resolutionStrategy<span class="token punctuation">.</span>cacheChangingModulesFor <span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">&apos;seconds&apos;</span>
+        <span class="token punctuation">}</span>
+
+        AppPlugins<span class="token punctuation">.</span><span class="token function">addPlugins</span><span class="token punctuation">(</span>project<span class="token punctuation">,</span> properties<span class="token punctuation">)</span>
+        AppConfig<span class="token punctuation">.</span><span class="token function">addConfig</span><span class="token punctuation">(</span>project<span class="token punctuation">,</span> properties<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+</ol>
+<h4 id="&#x4F9D;&#x8D56;&#x7EDF;&#x4E00;&#x7BA1;&#x7406;">&#x4F9D;&#x8D56;&#x7EDF;&#x4E00;&#x7BA1;&#x7406;</h4>
+<ol>
+<li><p>&#x65B0;&#x5EFA;Versions.java&#xFF0C;&#x7528;&#x6765;&#x5B9A;&#x4E49;&#x4F9D;&#x8D56;&#x7248;&#x672C;&#x53F7;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Versions</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token class-name">String</span> android_gradle_plugin <span class="token operator">=</span> <span class="token string">&quot;7.0.2&quot;</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token class-name">String</span> android_startup <span class="token operator">=</span> <span class="token string">&quot;1.0.7&quot;</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token class-name">String</span> mmkv <span class="token operator">=</span> <span class="token string">&quot;1.2.7&quot;</span><span class="token punctuation">;</span>
+
+      <span class="token comment">//TODO &#x7528;&#x5230;&#x7684;&#x4F9D;&#x8D56;&#x7248;&#x672C;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>&#x6839;&#x636E;&#x4F9D;&#x8D56;&#x5206;&#x7EC4;&#x5EFA;&#x7ACB;&#x4F9D;&#x8D56;&#x8DEF;&#x5F84;&#x7BA1;&#x7406;&#x5305;&#xFF0C;&#x5982;Room&#x4E0B;&#x6709;&#x56DB;&#x4E2A;&#x4F9D;&#x8D56;&#x8DEF;&#x5F84;&#xFF0C;&#x65B0;&#x5EFA;Room.java&#x6587;&#x4EF6;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Room</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token class-name">String</span> runtime <span class="token operator">=</span> <span class="token string">&quot;androidx.room:room-runtime:&quot;</span><span class="token operator">+</span> <span class="token class-name">Versions</span><span class="token punctuation">.</span>room<span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token class-name">String</span> compiler_kapt <span class="token operator">=</span> <span class="token string">&quot;androidx.room:room-compiler:&quot;</span><span class="token operator">+</span><span class="token class-name">Versions</span><span class="token punctuation">.</span>room<span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token class-name">String</span> testing <span class="token operator">=</span> <span class="token string">&quot;androidx.room:room-testing:&quot;</span><span class="token operator">+</span><span class="token class-name">Versions</span><span class="token punctuation">.</span>room<span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token class-name">String</span> ktx <span class="token operator">=</span> <span class="token string">&quot;androidx.room:room-ktx:&quot;</span><span class="token operator">+</span><span class="token class-name">Versions</span><span class="token punctuation">.</span>room<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>&#x6839;&#x636E;&#x4E0D;&#x540C;&#x7EC4;&#x4EF6;&#x5EFA;&#x8BAE;&#x4F9D;&#x8D56;&#x7BA1;&#x7406;java&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x5B9A;&#x4E49;&#x4F9D;&#x8D56;&#x6570;&#x7EC4;&#xFF0C;&#x5982;Event&#x7EC4;&#x4EF6;&#xFF0C;&#x65B0;&#x5EFA;EventExt.java&#x6587;&#x4EF6;&#xFF0C;&#x5B9A;&#x4E49;eventDepList&#x6570;&#x7EC4;&#xFF0C;&#x6570;&#x7EC4;&#x4E2D;&#x5B58;&#x653E;&#x7684;&#x662F;  &#x6B65;&#x9AA4;2.  &#x4E2D;&#x7684;&#x4F9D;&#x8D56;&#x8DEF;&#x5F84;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">EventExt</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> eventDepList <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token class-name">Koin</span><span class="token punctuation">.</span>android<span class="token punctuation">,</span>
+            <span class="token class-name">Koin</span><span class="token punctuation">.</span>android_compat<span class="token punctuation">,</span>
+            <span class="token class-name">Support</span><span class="token punctuation">.</span>android_startup<span class="token punctuation">,</span>
+            <span class="token class-name">Others</span><span class="token punctuation">.</span>liveeventbus<span class="token punctuation">,</span>
+            <span class="token class-name">Others</span><span class="token punctuation">.</span>timber<span class="token punctuation">,</span>
+            <span class="token class-name">Others</span><span class="token punctuation">.</span>gson<span class="token punctuation">,</span>
+            <span class="token class-name">Kotlin</span><span class="token punctuation">.</span>stdlib<span class="token punctuation">,</span>
+            <span class="token class-name">Kotlin</span><span class="token punctuation">.</span>coroutines<span class="token punctuation">,</span>
+            <span class="token class-name">Others</span><span class="token punctuation">.</span>mmkv<span class="token punctuation">,</span>
+            <span class="token class-name">Others</span><span class="token punctuation">.</span>slf4j<span class="token punctuation">,</span>
+            <span class="token class-name">DRouter</span><span class="token punctuation">.</span>api<span class="token punctuation">,</span>
+            <span class="token class-name">Retrofit</span><span class="token punctuation">.</span>okhttp_logging_interceptor<span class="token punctuation">,</span>
+
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>&#x5728;&#x63D2;&#x4EF6;&#x4E2D;&#x65B0;&#x5EFA;ModuleEnum&#xFF0C;&#x653E;&#x5165;&#x5404;&#x4E2A;&#x7EC4;&#x4EF6;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x65B9;&#x4FBF;&#x5224;&#x65AD;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">enum</span> <span class="token class-name">ModuleEnum</span> <span class="token punctuation">{</span>
+    <span class="token function">EVENT</span><span class="token punctuation">(</span><span class="token string">&quot;lib.event&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">NETWORK</span><span class="token punctuation">(</span><span class="token string">&quot;lib.network&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">DATABASE</span><span class="token punctuation">(</span><span class="token string">&quot;lib.database&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">FRAME</span><span class="token punctuation">(</span><span class="token string">&quot;lib.frame&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">SCAN</span><span class="token punctuation">(</span><span class="token string">&quot;lib.scan&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">REMOTE</span><span class="token punctuation">(</span><span class="token string">&quot;lib.remote&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">WEBSOCKET</span><span class="token punctuation">(</span><span class="token string">&quot;lib.websocket&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">RABBITMQ</span><span class="token punctuation">(</span><span class="token string">&quot;lib.rabbitmq&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">private</span> <span class="token keyword">final</span> <span class="token class-name">String</span> name<span class="token punctuation">;</span>
+
+    <span class="token class-name">ModuleEnum</span><span class="token punctuation">(</span><span class="token class-name">String</span> name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> name<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>&#x65B0;&#x5EFA;AppDep.groovy&#xFF0C;&#x7528;&#x4E8E;&#x7BA1;&#x7406;&#x6240;&#x6709;&#x7EC4;&#x4EF6;&#x548C;&#x9879;&#x76EE;&#x7684;&#x4F9D;&#x8D56;&#x9879;&#xFF0C;&#x4EE5;event&#x7EC4;&#x4EF6;&#x4E3A;&#x4F8B;&#xFF0C;&#x5FAA;&#x73AF;implementation&#x5B9A;&#x4E49;&#x7684;&#x4F9D;&#x8D56;&#xFF0C; <strong>&#x5F80;&#x5F80;&#x8DEF;&#x5F84;&#x4E2D;&#x6709;compiler&#x7684;&#x4F9D;&#x8D56;&#x662F;&#x6CE8;&#x89E3;&#x7C7B;&#x4F9D;&#x8D56;&#xFF0C;&#x9700;&#x8981;&#x4F7F;&#x7528;katp</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">class</span> <span class="token class-name">AppDep</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">static</span> def <span class="token function">addDep</span><span class="token punctuation">(</span><span class="token class-name">Project</span> project<span class="token punctuation">,</span> <span class="token class-name">SylinkProperties</span> sylinkProperties<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>sylinkProperties<span class="token punctuation">.</span>SYLINK_APPLICATION_ID<span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">switch</span> <span class="token punctuation">(</span>project<span class="token punctuation">.</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">case</span> <span class="token class-name">ModuleEnum</span><span class="token punctuation">.</span>EVENT<span class="token punctuation">.</span>name<span class="token operator">:</span>
+                    project<span class="token punctuation">.</span>dependencies <span class="token punctuation">{</span>
+                        <span class="token class-name">EventExt</span><span class="token punctuation">.</span>eventDepList<span class="token punctuation">.</span>each <span class="token punctuation">{</span>
+                            implementation it
+                        <span class="token punctuation">}</span>
+                    <span class="token punctuation">}</span>
+                    <span class="token keyword">break</span>
+                 <span class="token keyword">case</span> <span class="token class-name">ModuleEnum</span><span class="token punctuation">.</span>DATABASE<span class="token punctuation">.</span>name<span class="token operator">:</span>
+                    project<span class="token punctuation">.</span>dependencies <span class="token punctuation">{</span>
+                        <span class="token class-name">DatabaseExt</span><span class="token punctuation">.</span>databaseDepList<span class="token punctuation">.</span>each <span class="token punctuation">{</span>
+                            <span class="token keyword">if</span> <span class="token punctuation">(</span>it<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span><span class="token string">&quot;compiler&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                                kapt it
+                            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                                implementation it
+                            <span class="token punctuation">}</span>
+                        <span class="token punctuation">}</span>
+                    <span class="token punctuation">}</span>
+                    <span class="token keyword">break</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>&#x5728;XXXController&#x7684;apply&#x65B9;&#x6CD5;&#x4E2D;&#x8C03;&#x7528;addDep&#x65B9;&#x6CD5;</p>
+<pre class="language-"><code class="lang-groovy"><span class="token keyword">class</span> <span class="token class-name">DependenciesVersionController</span> <span class="token keyword">implements</span> <span class="token class-name">Plugin</span><span class="token operator">&lt;</span>Project<span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">void</span> <span class="token function">apply</span><span class="token punctuation">(</span>Project project<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        SylinkProperties properties <span class="token operator">=</span> PropertiesUtils<span class="token punctuation">.</span><span class="token function">readProperties</span><span class="token punctuation">(</span>project<span class="token punctuation">)</span>
+        println properties
+
+        Repos<span class="token punctuation">.</span><span class="token function">addRepos</span><span class="token punctuation">(</span>project<span class="token punctuation">,</span> properties<span class="token punctuation">)</span>
+
+        <span class="token comment">//&#x5FEB;&#x7167;&#x7248;&#x672C;&#x6C38;&#x8FDC;&#x68C0;&#x67E5;&#x6700;&#x65B0;</span>
+        project<span class="token punctuation">.</span>configurations<span class="token punctuation">.</span>all <span class="token punctuation">{</span>
+            resolutionStrategy<span class="token punctuation">.</span>cacheChangingModulesFor <span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">&apos;seconds&apos;</span>
+        <span class="token punctuation">}</span>
+
+        AppPlugins<span class="token punctuation">.</span><span class="token function">addPlugins</span><span class="token punctuation">(</span>project<span class="token punctuation">,</span> properties<span class="token punctuation">)</span>
+        AppConfig<span class="token punctuation">.</span><span class="token function">addConfig</span><span class="token punctuation">(</span>project<span class="token punctuation">,</span> properties<span class="token punctuation">)</span>
+        AppDep<span class="token punctuation">.</span><span class="token function">addDep</span><span class="token punctuation">(</span>project<span class="token punctuation">,</span> properties<span class="token punctuation">)</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+</ol>
+<h3 id="&#x4F7F;&#x7528;">&#x4F7F;&#x7528;</h3>
+<ol>
+<li><p>&#x5728; <strong>&#x65B0;&#x5EFA;&#x9879;&#x76EE;&#x7BC7;</strong>&#x4E2D;&#x5DF2;&#x7ECF;&#x4ECB;&#x7ECD;&#x4E86;&#x63D2;&#x4EF6;&#x96C6;&#x6210;&#x4E86;push.gradle&#xFF0C;&#x8DDF;&#x4E91;&#x7AEF;&#x7EC4;&#x4EF6;&#x4E0A;&#x4F20;&#x81F3;Maven&#x4E00;&#x6837;&#xFF0C;&#x5728;&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x5B8C;&#x6210;&#x540E;&#x70B9;publish&#x5373;&#x53EF;&#x53D1;&#x5E03;&#x5230;Maven&#x4ED3;&#x5E93;&#x4E2D;</p>
+<p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#x8FD9;&#x4E2A;gradle&#x63D2;&#x4EF6;&#xFF0C;&#x4E0D;&#x662F;android&#x7684;&#x9879;&#x76EE;&#xFF0C;&#x6240;&#x4EE5;&#x4E0A;&#x4F20;&#x6765;&#x6E90;&#x6709;&#x6240;&#x4E0D;&#x540C;&#x3002;</p>
+<p><strong>&#x5728;android&#x9879;&#x76EE;&#x4E2D;&#xFF0C;&#x4E0A;&#x4F20;&#x6765;&#x6E90;&#x662F;components.release&#xFF0C;&#x800C;gradle&#x63D2;&#x4EF6;&#x5219;&#x662F;components.java</strong></p>
+<pre class="language-"><code class="lang-groovy">afterEvaluate <span class="token punctuation">{</span>
+    publishing <span class="token punctuation">{</span>
+        publications <span class="token punctuation">{</span>
+            <span class="token function">Production</span><span class="token punctuation">(</span>MavenPublication<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment">// from components.release &#x8FD9;&#x662F;android&#x7EC4;&#x4EF6;&#x7684;&#x914D;&#x7F6E;</span>
+                from components<span class="token punctuation">.</span>java
+
+                <span class="token comment">//TODO ...</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>&#x5728;&#x9879;&#x76EE;&#x7684;build.gradle&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;</p>
+<pre class="language-"><code class="lang-groovy">dependencies <span class="token punctuation">{</span>
+    classpath <span class="token string">&apos;com.shuyilink:dfs-app-version:1.0.0-XXXXXXX&apos;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>&#x5728;&#x6A21;&#x5757;&#x7684;build.gradle&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;</p>
+<pre class="language-"><code class="lang-groovy">apply plugin<span class="token punctuation">:</span> <span class="token string">&apos;com.sylink.dfs.app.version.plugin&apos;</span>
+</code></pre>
+</li>
+</ol>
+<p>&#x200B;    &#x8FD9;&#x6837;&#x6240;&#x6709;&#x7684;&#x7EC4;&#x4EF6;&#x5747;&#x53EF;&#x83B7;&#x5F97;&#x63D2;&#x4EF6;&#x5185;&#x7684;gradle&#x914D;&#x7F6E;</p>
+<p>&#x200B;    <strong>&#x81F3;&#x6B64;&#x63D2;&#x4EF6;&#x7684;&#x57FA;&#x672C;&#x5F00;&#x53D1;&#x7ED3;&#x675F;&#xFF0C;&#x4E0D;&#x540C;&#x9879;&#x76EE;&#x548C;&#x4E0D;&#x540C;&#x7EC4;&#x4EF6;&#x53EF;&#x901A;&#x8FC7;&#x5305;&#x540D;&#x6216;&#x7EC4;&#x4EF6;&#x540D;&#x6765;&#x505A;&#x4E0D;&#x540C;&#x7684;&#x52A8;&#x6001;&#x914D;&#x7F6E;</strong></p>
+<h2 id="gradleproperties&#x8BFB;&#x53D6;">gradle.properties&#x8BFB;&#x53D6;</h2>
+<h3 id="&#x95EE;&#x9898;">&#x95EE;&#x9898;</h3>
+<p>gradle.properties&#x53EF;&#x4EE5;&#x5199;&#x5165;&#x4E00;&#x4E9B;&#x9879;&#x76EE;&#x7684;&#x914D;&#x7F6E;&#x5E38;&#x91CF;&#xFF0C;&#x4E14;&#x80FD;&#x88AB;build.gradle&#x8BFB;&#x53D6;&#xFF0C;&#x4F46;&#x7531;&#x4E8E;&#x4E91;&#x7AEF;&#x7EC4;&#x4EF6;&#x72EC;&#x7ACB;&#x4E8E;&#x6BCF;&#x4E2A;&#x9879;&#x76EE;&#x4E4B;&#x4E2D;&#xFF0C;&#x8FD9;&#x5C31;&#x5BFC;&#x81F4;&#x4E86;&#x6BCF;&#x4E2A;&#x7EC4;&#x4EF6;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x4E00;&#x4EFD;</p>
+<p>build.config&#x6587;&#x4EF6;&#xFF0C;&#x6BCF;&#x4E2A;&#x9879;&#x76EE;&#x7EF4;&#x62A4;&#x4E00;&#x4EFD;&#x8BFB;&#x53D6;gradle.properties&#x7684;&#x65B9;&#x6CD5;&#x5F88;&#x5197;&#x4F59;&#xFF0C;&#x9700;&#x8981;&#x6709;&#x7EDF;&#x4E00;&#x8BFB;&#x53D6;&#x9879;&#x76EE;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<h3 id="&#x5B9E;&#x73B0;">&#x5B9E;&#x73B0;</h3>
+<p>&#x5728;&#x6240;&#x6709;&#x6A21;&#x5757;&#x90FD;&#x4F9D;&#x8D56;&#x4E0A;&#x9762;&#x7684;gradle&#x63D2;&#x4EF6;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;gradle.properties&#x4E2D;&#x7684;&#x914D;&#x7F6E;&#x7EDF;&#x4E00;&#x5199;&#x8FDB;gradle&#x63D2;&#x4EF6;&#x4E2D;</p>
+<ol>
+<li><p>&#x5728;&#x63D2;&#x4EF6;&#x4E2D;&#x5B9A;&#x4E49;PropertiesEnum&#xFF0C;&#x6765;&#x5B9A;&#x4E49;gradle.properties&#x4E2D;&#x503C;&#x7684;key</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">enum</span> <span class="token class-name">PropertiesEnum</span> <span class="token punctuation">{</span>
+    DESIGN_WIDTH<span class="token punctuation">,</span>
+    DESIGN_HEIGHT<span class="token punctuation">,</span>
+    SYLINK_COMPANY<span class="token punctuation">,</span>
+    SYLINK_IS_BUILD_MODULE<span class="token punctuation">,</span>
+    SYLINK_IS_JENKINS<span class="token punctuation">,</span>
+    SYLINK_SERVER<span class="token punctuation">,</span>
+    SYLINK_APPLICATION_ID<span class="token punctuation">,</span>
+    SYLINK_USE_LOCAL_MAVEN<span class="token punctuation">,</span>
+    SYLINK_VERSION<span class="token punctuation">,</span>
+    SYLINK_KEY_STORE<span class="token punctuation">,</span>
+    SYLINK_KEY_STORE_PWD<span class="token punctuation">,</span>
+    SYLINK_KEY_ALIAS<span class="token punctuation">,</span>
+    SYLINK_KEY_ALIAS_PWD<span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>&#x5B9A;&#x4E49;bean&#x7C7B;SylinkProperties&#xFF0C;&#x5C06;&#x4E0A;&#x9762;&#x7684;&#x503C;&#x5B9A;&#x4E49;&#x5728;bean&#x7C7B;&#x4E2D;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">SylinkProperties</span> <span class="token punctuation">{</span>
+
+       <span class="token keyword">private</span> <span class="token class-name">String</span> DESIGN_WIDTH<span class="token punctuation">;</span>
+       <span class="token keyword">private</span> <span class="token class-name">String</span> DESIGN_HEIGHT<span class="token punctuation">;</span>
+       <span class="token keyword">private</span> <span class="token class-name">Boolean</span> SYLINK_IS_DEBUG<span class="token punctuation">;</span>
+       <span class="token keyword">private</span> <span class="token class-name">String</span> SYLINK_COMPANY<span class="token punctuation">;</span>
+       <span class="token keyword">private</span> <span class="token class-name">Boolean</span> SYLINK_IS_BUILD_MODULE<span class="token punctuation">;</span>
+       <span class="token keyword">private</span> <span class="token class-name">Boolean</span> SYLINK_IS_JENKINS<span class="token punctuation">;</span>
+       <span class="token keyword">private</span> <span class="token class-name">String</span> SYLINK_SERVER<span class="token punctuation">;</span>
+       <span class="token keyword">private</span> <span class="token class-name">String</span> SYLINK_APPLICATION_ID<span class="token punctuation">;</span>
+       <span class="token keyword">private</span> <span class="token class-name">String</span> SYLINK_VERSION_NAME<span class="token punctuation">;</span>
+       <span class="token keyword">private</span> <span class="token class-name">Integer</span> SYLINK_VERSION_CODE<span class="token punctuation">;</span>
+       <span class="token keyword">private</span> <span class="token class-name">Boolean</span> SYLINK_USE_LOCAL_MAVEN<span class="token punctuation">;</span>
+       <span class="token keyword">private</span> <span class="token class-name">String</span> SYLINK_KEY_STORE<span class="token punctuation">;</span>
+       <span class="token keyword">private</span> <span class="token class-name">String</span> SYLINK_KEY_STORE_PWD<span class="token punctuation">;</span>
+       <span class="token keyword">private</span> <span class="token class-name">String</span> SYLINK_KEY_ALIAS<span class="token punctuation">;</span>
+       <span class="token keyword">private</span> <span class="token class-name">String</span> SYLINK_KEY_ALIAS_PWD<span class="token punctuation">;</span>
+           <span class="token comment">//TODO &#x6784;&#x9020;&#xFF0C;get set&#x65B9;&#x6CD5; </span>
+
+   <span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>&#x7F16;&#x5199;&#x65B9;&#x6CD5;&#x8BFB;&#x53D6;&#x9879;&#x76EE;&#x4E2D;properties&#x4E2D;&#x7684;&#x503C;&#x5E76;&#x8D4B;&#x503C;&#x5230;SylinkProperties&#x4E2D;&#xFF0C;properties&#x4E2D;&#x503C;&#x7684;key&#x5FC5;&#x987B;&#x8DDF;<code>PropertiesEnum</code>&#x4E2D;&#x4E00;&#x6837;</p>
+<pre class="language-"><code class="lang-groovy"><span class="token keyword">class</span> <span class="token class-name">PropertiesUtils</span> <span class="token punctuation">{</span>
+    <span class="token keyword">static</span> SylinkProperties <span class="token function">readProperties</span><span class="token punctuation">(</span>Project project<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        HashMap proMap <span class="token operator">=</span> project<span class="token punctuation">.</span>properties
+        SylinkProperties sylinkProperties <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">SylinkProperties</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        sylinkProperties<span class="token punctuation">.</span><span class="token function">setDESIGN_HEIGHT</span><span class="token punctuation">(</span>proMap<span class="token punctuation">[</span>PropertiesEnum<span class="token punctuation">.</span>DESIGN_HEIGHT<span class="token punctuation">.</span><span class="token function">name</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        sylinkProperties<span class="token punctuation">.</span><span class="token function">setDESIGN_WIDTH</span><span class="token punctuation">(</span>proMap<span class="token punctuation">[</span>PropertiesEnum<span class="token punctuation">.</span>DESIGN_WIDTH<span class="token punctuation">.</span><span class="token function">name</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+        sylinkProperties<span class="token punctuation">.</span><span class="token function">setSYLINK_IS_DEBUG</span><span class="token punctuation">(</span><span class="token operator">!</span>AppInfoUtils<span class="token punctuation">.</span><span class="token function">isReleaseBuildType</span><span class="token punctuation">(</span>project<span class="token punctuation">.</span>gradle<span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token comment">//TODO &#x5176;&#x4ED6;&#x9879;&#x8D4B;&#x503C; </span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>&#x5728;XXXController&#x7684;apply&#x65B9;&#x6CD5;&#x4E2D;&#x8C03;&#x7528;readProperties&#x65B9;&#x6CD5;</p>
+<pre class="language-"><code class="lang-groovy"><span class="token keyword">class</span> <span class="token class-name">DependenciesVersionController</span> <span class="token keyword">implements</span> <span class="token class-name">Plugin</span><span class="token operator">&lt;</span>Project<span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">void</span> <span class="token function">apply</span><span class="token punctuation">(</span>Project project<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        SylinkProperties properties <span class="token operator">=</span> PropertiesUtils<span class="token punctuation">.</span><span class="token function">readProperties</span><span class="token punctuation">(</span>project<span class="token punctuation">)</span>
+        println properties
+
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>&#x81F3;&#x6B64;&#xFF0C;&#x53EA;&#x8981;&#x5728;&#x7EC4;&#x4EF6;&#x4E2D;&#x4F9D;&#x8D56;gradle&#x63D2;&#x4EF6;&#xFF0C;&#x5C31;&#x80FD;&#x7EDF;&#x4E00;&#x8BFB;&#x53D6;gradle.properties&#x4E2D;&#x7684;&#x5C5E;&#x6027;&#x5E76;&#x901A;&#x8FC7;<strong>properties&#x5B9E;&#x4F8B;</strong>&#x4F7F;&#x7528;</p>
+</li>
+</ol>
+<h2 id="buildconfig&#x5931;&#x6548;">BuildConfig&#x5931;&#x6548;</h2>
+<h3 id="&#x95EE;&#x9898;">&#x95EE;&#x9898;</h3>
+<p>&#x4E0A;&#x4F20;&#x81F3;maven&#x7684;&#x662F;aar&#x5305;&#xFF0C;aar&#x5305;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;&#x52A0;&#x4E86;&#x8D44;&#x6E90;&#x6587;&#x4EF6;&#x7684;jar&#x5305;&#xFF0C;jar&#x5305;&#x4E2D;&#x662F;&#x7F16;&#x8BD1;&#x540E;&#x7684;java/kotlin&#x6587;&#x4EF6;&#xFF0C;&#x5373;.class&#x6587;&#x4EF6;&#x3002;</p>
+<p> <strong>&#x8FD9;&#x4E5F;&#x662F;&#x4E3A;&#x4EC0;&#x4E48;&#x53EA;&#x6709;&#x4E91;&#x7AEF;&#x4F9D;&#x8D56;&#x7684;&#x7EC4;&#x4EF6;&#x5316;&#x624D;&#x80FD;&#x771F;&#x6B63;&#x63D0;&#x9AD8;&#x7F16;&#x8BD1;&#x901F;&#x5EA6;&#x7684;&#x539F;&#x56E0;</strong></p>
+<p>&#x800C;BuildConfig&#x662F;&#x5728;&#x7F16;&#x8BD1;&#x4E2D;&#x6839;&#x636E;build.gradle&#x7684;buildTypes&#x4E2D;&#x7684;&#x914D;&#x7F6E;&#x9879;&#x5199;&#x5165;&#x7684;&#x3002;</p>
+<p>&#x65E2;&#x7136;aar&#x5305;&#x5DF2;&#x7ECF;&#x7F16;&#x8BD1;&#x4E86;&#xFF0C;&#x90A3;&#x4E91;&#x7AEF;&#x7EC4;&#x4EF6;&#x7684;BuildConfig&#x81EA;&#x7136;&#x4E5F;&#x5C31;&#x5DF2;&#x7ECF;&#x5199;&#x5165;&#x751F;&#x6210;&#x4E86;&#xFF0C;<strong>&#x6240;&#x4EE5;&#x5728;&#x4E91;&#x7AEF;&#x7EC4;&#x4EF6;&#x4E2D;BuildConfig.DEBUG&#x6C38;&#x8FDC;&#x662F;false</strong></p>
+<p><strong>&#x9700;&#x8981;&#x5BFB;&#x627E;&#x53EF;&#x66FF;&#x4EE3;BuildConfig&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x4F7F;&#x4E91;&#x7AEF;&#x4F9D;&#x8D56;&#x4E5F;&#x80FD;&#x8DDF;&#x968F;&#x5B9E;&#x9645;&#x9879;&#x76EE;&#x7684;&#x914D;&#x7F6E;&#x800C;&#x6539;&#x53D8;&#xFF0C;&#x6BD4;&#x5982;&#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;&#xFF0C;UI&#x81EA;&#x9002;&#x5E94;&#x7684;&#x5BBD;&#x9AD8;&#x7B49;</strong></p>
+<p>&#x8FD9;&#x4E2A;&#x914D;&#x7F6E;&#x9700;&#x6EE1;&#x8DB3;&#x4E24;&#x4E2A;&#x6761;&#x4EF6;&#xFF1A;</p>
+<ol>
+<li>&#x80FD;&#x540C;&#x65F6;&#x5F71;&#x54CD;&#x672C;&#x5730;&#x7EC4;&#x4EF6;&#x548C;&#x7F16;&#x8BD1;&#x540E;&#x7684;&#x4E91;&#x7AEF;&#x7EC4;&#x4EF6;&#xFF08;&#x80FD;&#x88AB;&#x8FD9;&#x4E24;&#x79CD;&#x7EC4;&#x4EF6;&#x5171;&#x7528;&#xFF09;</li>
+<li>&#x5728;&#x7F16;&#x8BD1;&#x65F6;&#x6839;&#x636E;build.gradle&#x6587;&#x4EF6;&#x52A8;&#x6001;&#x6539;&#x53D8;&#x5BF9;&#x5E94;&#x7684;&#x503C;</li>
+</ol>
+<h3 id="&#x5B9E;&#x73B0;">&#x5B9E;&#x73B0;</h3>
+<p>&#x4F7F;&#x7528;AndroidManifest.xml&#x66FF;&#x4EE3;Build.Config&#xFF0C;</p>
+<p>&#x5BF9;&#x4E8E;&#x4E0A;&#x9762;&#x4E24;&#x4E2A;&#x6761;&#x4EF6;</p>
+<ol>
+<li>&#x5728;&#x7F16;&#x8BD1;&#x65F6;&#x6240;&#x6709;&#x6A21;&#x5757;&#x7684;AndroidManifest.xml&#x4F1A;&#x5408;&#x5E76;&#x6210;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x6EE1;&#x8DB3;&#x88AB;&#x6240;&#x6709;&#x7EC4;&#x4EF6;&#x5171;&#x7528;&#x7684;&#x6761;&#x4EF6;</li>
+<li>AndroidManifest.xml&#x4E2D;&#x7684;&#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x5728;build.gradle&#x4E2D;&#x901A;&#x8FC7;manifestPlaceholders&#x8BBE;&#x7F6E;&#xFF0C;&#x4E14;&#x53EF;&#x901A;&#x8FC7;&#x53CD;&#x5C04;&#x88AB;&#x8BFB;&#x51FA;&#xFF0C;&#x6EE1;&#x8DB3;&#x52A8;&#x6001;&#x6539;&#x53D8;&#x7684;&#x6761;&#x4EF6;&#x3002;</li>
+</ol>
+<p>DFS&#x540C;&#x6837;&#x4F7F;&#x7528;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x63D2;&#x4EF6;&#x6765;&#x5B9E;&#x73B0;&#x6240;&#x6709;&#x6A21;&#x5757;&#x7684;&#x914D;&#x7F6E;&#x7EDF;&#x4E00;&#x8BFB;&#x5199;&#x65B9;&#x6CD5;</p>
+<ol>
+<li><p>DFS&#x7684;&#x52A8;&#x6001;&#x914D;&#x7F6E;&#x5C5E;&#x6027;&#x5747;&#x5199;&#x5728;gradle.properties&#x4E2D;&#xFF0C;&#x4F7F;&#x7528;&#x4E0A;&#x9762;&#x7684;<strong>gradle.properties&#x8BFB;&#x53D6;&#x7BC7;</strong>&#xFF0C;&#x5C06;&#x914D;&#x7F6E;&#x5199;&#x5165;sylinkProperties&#x5B9E;&#x4F8B;</p>
+</li>
+<li><p>&#x6839;&#x636E; <strong>build&#x914D;&#x7F6E;&#x7EDF;&#x4E00;&#x7BA1;&#x7406;&#x7BC7;</strong>&#xFF0C;&#x5728;addConfig&#x65B9;&#x6CD5;&#x4E2D;&#x52A0;&#x5165;&#x914D;&#x7F6E;&#xFF1A;</p>
+<pre class="language-"><code class="lang-groovy"><span class="token comment">//&#x5982;&#x679C;&#x662F;application&#x6A21;&#x5757;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>project<span class="token punctuation">.</span>plugins<span class="token punctuation">.</span><span class="token function">hasPlugin</span><span class="token punctuation">(</span><span class="token string">&apos;com.android.application&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    project<span class="token punctuation">.</span>android <span class="token punctuation">{</span>
+        defaultConfig <span class="token punctuation">{</span>
+            applicationId sylinkProperties<span class="token punctuation">.</span>SYLINK_APPLICATION_ID
+            manifestPlaceholders <span class="token operator">=</span> <span class="token punctuation">[</span>
+                    DESIGN_WIDTH          <span class="token punctuation">:</span> sylinkProperties<span class="token punctuation">.</span>DESIGN_WIDTH<span class="token punctuation">,</span>
+                    DESIGN_HEIGHT         <span class="token punctuation">:</span> sylinkProperties<span class="token punctuation">.</span>DESIGN_HEIGHT<span class="token punctuation">,</span>
+                    SYLINK_IS_DEBUG       <span class="token punctuation">:</span> sylinkProperties<span class="token punctuation">.</span>SYLINK_IS_DEBUG<span class="token punctuation">,</span>
+                    SYLINK_IS_BUILD_MODULE<span class="token punctuation">:</span> sylinkProperties<span class="token punctuation">.</span>SYLINK_IS_BUILD_MODULE<span class="token punctuation">,</span>
+                    SYLINK_IS_JENKINS     <span class="token punctuation">:</span> sylinkProperties<span class="token punctuation">.</span>SYLINK_IS_JENKINS<span class="token punctuation">,</span>
+                    SYLINK_SERVER         <span class="token punctuation">:</span> sylinkProperties<span class="token punctuation">.</span>SYLINK_SERVER<span class="token punctuation">,</span>
+                    SYLINK_APPLICATION_ID <span class="token punctuation">:</span> sylinkProperties<span class="token punctuation">.</span>SYLINK_APPLICATION_ID<span class="token punctuation">,</span>
+                    SYLINK_VERSION_NAME   <span class="token punctuation">:</span> sylinkProperties<span class="token punctuation">.</span>SYLINK_VERSION_NAME<span class="token punctuation">,</span>
+                    SYLINK_COMPANY        <span class="token punctuation">:</span> sylinkProperties<span class="token punctuation">.</span>SYLINK_COMPANY<span class="token punctuation">,</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>&#x5728;&#x9879;&#x76EE;&#x58F3;App&#x7684;AndroidManifest.xml&#x4E2D;&#x52A0;&#x5165;meta-data&#x914D;&#x7F6E;&#xFF0C;vlaue&#x5FC5;&#x987B;&#x4E0E;&#x4E0A;&#x9762;&#x7684;key&#x76F8;&#x5BF9;&#x5E94;</p>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta-data</span>
+    <span class="token attr-name"><span class="token namespace">android:</span>name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>design_width_in_dp<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>${DESIGN_WIDTH}<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta-data</span>
+    <span class="token attr-name"><span class="token namespace">android:</span>name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>design_height_in_dp<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>${DESIGN_HEIGHT}<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta-data</span>
+    <span class="token attr-name"><span class="token namespace">android:</span>name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>SYLINK_IS_DEBUG<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>${SYLINK_IS_DEBUG}<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta-data</span>
+    <span class="token attr-name"><span class="token namespace">android:</span>name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>SYLINK_SERVER<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>${SYLINK_SERVER}<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta-data</span>
+    <span class="token attr-name"><span class="token namespace">android:</span>name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>SYLINK_IS_JENKINS<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>${SYLINK_IS_JENKINS}<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta-data</span>
+    <span class="token attr-name"><span class="token namespace">android:</span>name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>SYLINK_IS_BUILD_MODULE<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>${SYLINK_IS_BUILD_MODULE}<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta-data</span>
+    <span class="token attr-name"><span class="token namespace">android:</span>name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>SYLINK_COMPANY<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>${SYLINK_COMPANY}<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta-data</span>
+    <span class="token attr-name"><span class="token namespace">android:</span>name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>SYLINK_APPLICATION_ID<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>${SYLINK_APPLICATION_ID}<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+</code></pre>
+</li>
+<li><p>&#x5728;event&#x7EC4;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;getMetaData&#x65B9;&#x6CD5;&#xFF0C;&#x7531;&#x4E8E;&#x8FD9;&#x4E9B;&#x914D;&#x7F6E;&#x6240;&#x6709;&#x7EC4;&#x4EF6;&#x90FD;&#x53EF;&#x80FD;&#x6709;&#x7528;&#xFF0C;&#x6240;&#x4EE5;&#x5C06;&#x65B9;&#x6CD5;&#x653E;&#x5728;event&#x7EC4;&#x4EF6;&#x5185;&#xFF0C;&#x65B9;&#x4FBF;&#x5168;&#x5C40;&#x8C03;&#x7528;</p>
+<pre class="language-"><code class="lang-kotlin"><span class="token keyword">object</span> BuildConfigParseUtil <span class="token punctuation">{</span>
+
+    <span class="token keyword">const</span> <span class="token keyword">val</span> KEY_SERVER <span class="token operator">=</span> <span class="token string">&quot;SYLINK_SERVER&quot;</span>
+    <span class="token keyword">const</span> <span class="token keyword">val</span> KEY_IS_JENKINS <span class="token operator">=</span> <span class="token string">&quot;SYLINK_IS_JENKINS&quot;</span>
+    <span class="token keyword">const</span> <span class="token keyword">val</span> KEY_IS_BUILD_MODULE <span class="token operator">=</span> <span class="token string">&quot;SYLINK_IS_BUILD_MODULE&quot;</span>
+    <span class="token keyword">const</span> <span class="token keyword">val</span> KEY_COMPANY <span class="token operator">=</span> <span class="token string">&quot;SYLINK_COMPANY&quot;</span>
+    <span class="token keyword">const</span> <span class="token keyword">val</span> KEY_IS_DEBUG <span class="token operator">=</span> <span class="token string">&quot;SYLINK_IS_DEBUG&quot;</span>
+    <span class="token keyword">const</span> <span class="token keyword">val</span> KEY_APPLICATION_ID <span class="token operator">=</span> <span class="token string">&quot;SYLINK_APPLICATION_ID&quot;</span>
+    <span class="token keyword">const</span> <span class="token keyword">val</span> KEY_VERSION_NAME <span class="token operator">=</span> <span class="token string">&quot;SYLINK_VERSION_NAME&quot;</span>
+
+    <span class="token keyword">fun</span> <span class="token function">getMetaData</span><span class="token punctuation">(</span>context<span class="token operator">:</span> Context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">val</span> packageManager <span class="token operator">=</span> context<span class="token punctuation">.</span>packageManager
+        <span class="token keyword">val</span> applicationInfo<span class="token operator">:</span> ApplicationInfo
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            applicationInfo <span class="token operator">=</span> packageManager<span class="token punctuation">.</span><span class="token function">getApplicationInfo</span><span class="token punctuation">(</span>
+                context
+                    <span class="token punctuation">.</span>packageName<span class="token punctuation">,</span> PackageManager<span class="token punctuation">.</span>GET_META_DATA
+            <span class="token punctuation">)</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>applicationInfo <span class="token operator">!=</span> <span class="token keyword">null</span> <span class="token operator">&amp;&amp;</span> applicationInfo<span class="token punctuation">.</span>metaData <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>applicationInfo<span class="token punctuation">.</span>metaData<span class="token punctuation">.</span><span class="token function">containsKey</span><span class="token punctuation">(</span>KEY_SERVER<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    SylinkConstants<span class="token punctuation">.</span>SERVER <span class="token operator">=</span>
+                        applicationInfo<span class="token punctuation">.</span>metaData<span class="token punctuation">[</span>KEY_SERVER<span class="token punctuation">]</span> <span class="token keyword">as</span> String
+                <span class="token punctuation">}</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>applicationInfo<span class="token punctuation">.</span>metaData<span class="token punctuation">.</span><span class="token function">containsKey</span><span class="token punctuation">(</span>KEY_COMPANY<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    SylinkConstants<span class="token punctuation">.</span>COMPANY <span class="token operator">=</span>
+                        applicationInfo<span class="token punctuation">.</span>metaData<span class="token punctuation">[</span>KEY_COMPANY<span class="token punctuation">]</span> <span class="token keyword">as</span> String
+                <span class="token punctuation">}</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>applicationInfo<span class="token punctuation">.</span>metaData<span class="token punctuation">.</span><span class="token function">containsKey</span><span class="token punctuation">(</span>KEY_IS_JENKINS<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    SylinkConstants<span class="token punctuation">.</span>IS_JENKINS <span class="token operator">=</span>
+                        applicationInfo<span class="token punctuation">.</span>metaData<span class="token punctuation">[</span>KEY_IS_JENKINS<span class="token punctuation">]</span> <span class="token keyword">as</span> Boolean
+                <span class="token punctuation">}</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>applicationInfo<span class="token punctuation">.</span>metaData<span class="token punctuation">.</span><span class="token function">containsKey</span><span class="token punctuation">(</span>KEY_IS_BUILD_MODULE<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    SylinkConstants<span class="token punctuation">.</span>IS_BUILD_MODULE <span class="token operator">=</span>
+                        applicationInfo<span class="token punctuation">.</span>metaData<span class="token punctuation">[</span>KEY_IS_BUILD_MODULE<span class="token punctuation">]</span> <span class="token keyword">as</span> Boolean
+                <span class="token punctuation">}</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>applicationInfo<span class="token punctuation">.</span>metaData<span class="token punctuation">.</span><span class="token function">containsKey</span><span class="token punctuation">(</span>KEY_IS_DEBUG<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    SylinkConstants<span class="token punctuation">.</span>IS_DEBUG <span class="token operator">=</span>
+                        applicationInfo<span class="token punctuation">.</span>metaData<span class="token punctuation">[</span>KEY_IS_DEBUG<span class="token punctuation">]</span> <span class="token keyword">as</span> Boolean
+                <span class="token punctuation">}</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>applicationInfo<span class="token punctuation">.</span>metaData<span class="token punctuation">.</span><span class="token function">containsKey</span><span class="token punctuation">(</span>KEY_APPLICATION_ID<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    SylinkConstants<span class="token punctuation">.</span>APPLICATION_ID <span class="token operator">=</span>
+                        applicationInfo<span class="token punctuation">.</span>metaData<span class="token punctuation">[</span>KEY_APPLICATION_ID<span class="token punctuation">]</span> <span class="token keyword">as</span> String
+                <span class="token punctuation">}</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>applicationInfo<span class="token punctuation">.</span>metaData<span class="token punctuation">.</span><span class="token function">containsKey</span><span class="token punctuation">(</span>KEY_VERSION_NAME<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    SylinkConstants<span class="token punctuation">.</span>VERSION_CODE <span class="token operator">=</span>
+                        applicationInfo<span class="token punctuation">.</span>metaData<span class="token punctuation">[</span>KEY_VERSION_NAME<span class="token punctuation">]</span> <span class="token keyword">as</span> String
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>e<span class="token operator">:</span> PackageManager<span class="token punctuation">.</span>NameNotFoundException<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>&#x81F3;&#x6B64;&#xFF0C;&#x901A;&#x8FC7; <strong>gradle.properties&#x8BFB;&#x53D6;&#x7BC7;&#x548C;&#x672C;&#x7BC7;</strong>&#xFF0C;&#x80FD;&#x5C06;&#x9879;&#x76EE;&#x4E2D;&#x7684;properties&#x914D;&#x7F6E;&#x5728;&#x7F16;&#x8BD1;&#x65F6;&#x6210;&#x529F;&#x5199;&#x5165;<code>SylinkConstants</code>&#x7C7B;&#x4E2D;&#x3002;</p>
+</li>
+</ol>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> <a href="https://github.com/cmmdy" target="_blank">&#x5403;&#x732B;&#x732B;&#x7684;&#x9C7C;</a> </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> <i>&#x66F4;&#x65B0;&#x4E8E; </i> 2021-11-08 17:13:19 </span> </footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="业务组件.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 业务组件">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"基础组件","level":"1.2.5","depth":2,"previous":{"title":"业务组件","level":"1.2.4","depth":2,"path":"组件化/业务组件.md","ref":"组件化/业务组件.md","articles":[]},"dir":"ltr"},"config":{"plugins":["intopic-toc","expandable-chapters-small","back-to-top-button","page-footer-ex","prism","-highlight","-lunr","-search","search-pro","splitter","hide-element","code"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"prism":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"page-footer-ex":{"copyright":"[吃猫猫的鱼](https://github.com/cmmdy)","markdown":true,"update_label":"<i>更新于 </i>","update_format":"YYYY-MM-DD HH:mm:ss"},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"周文韬","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"hello":"everyone"},"title":"Android","language":"zh-hans","gitbook":"*","description":"Andro知识点"},"file":{"path":"组件化/基础组件.md","mtime":"2021-11-08T09:13:19.991Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-08T09:33:47.382Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
